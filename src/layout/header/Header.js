@@ -7,7 +7,8 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import AddIcon from "@material-ui/icons/Add";
 import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from '@material-ui/icons/Close';
+import CloseIcon from "@material-ui/icons/Close";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import useStyles from "./styles";
 import HeaderLogo from "../../images/header-logo.jpg";
 
@@ -16,18 +17,36 @@ const Header = () => {
 
     const handleOpenMenu = () => {
         const resOverlay = document.getElementById("res-overlay");
-        const openMenu = document.getElementById('open-menu')
-        const closeMenu = document.getElementById('close-menu')
+        const openMenu = document.getElementById("open-menu");
+        const closeMenu = document.getElementById("close-menu");
         resOverlay.style.display = "block";
-        openMenu.style.display = 'none'
-        closeMenu.style.display = 'block'
+        openMenu.style.display = "none";
+        closeMenu.style.display = "block";
     };
 
     const handleCloseMenu = () => {
         const resOverlay = document.getElementById("res-overlay");
-        const openMenu = document.getElementById('open-menu')
-        const closeMenu = document.getElementById('close-menu')
+        const openMenu = document.getElementById("open-menu");
+        const closeMenu = document.getElementById("close-menu");
         resOverlay.style.display = "none";
+        openMenu.style.display = "block";
+        closeMenu.style.display = "none";
+    };
+
+    const handleMobileMenuOpen = () => {
+        const resOverlay = document.getElementById("mobile-nav");
+        const openMenu = document.getElementById("mobile-open-menu")
+        const closeMenu = document.getElementById("mobile-close-menu")
+        resOverlay.style.display = 'block'
+        openMenu.style.display = 'none'
+        closeMenu.style.display = 'block'
+    }
+
+    const handleMobileMenuClose = () => {
+        const resOverlay = document.getElementById("mobile-nav");
+        const openMenu = document.getElementById("mobile-open-menu")
+        const closeMenu = document.getElementById("mobile-close-menu")
+        resOverlay.style.display = 'none'
         openMenu.style.display = 'block'
         closeMenu.style.display = 'none'
     }
@@ -72,8 +91,16 @@ const Header = () => {
 
                 <div>
                     <div className={classes.headerMenuIconWrap}>
-                        <MenuIcon id="open-menu" className={classes.headerMenuIcon} onClick={handleOpenMenu}/>
-                        <CloseIcon id="close-menu" className={classes.headerMenuCloseIcon} onClick={handleCloseMenu} />
+                        <MenuIcon
+                            id="open-menu"
+                            className={classes.headerMenuIcon}
+                            onClick={handleOpenMenu}
+                        />
+                        <CloseIcon
+                            id="close-menu"
+                            className={classes.headerMenuCloseIcon}
+                            onClick={handleCloseMenu}
+                        />
                     </div>
 
                     <ul className={classes.headerResMenu} id="res-overlay">
@@ -103,7 +130,7 @@ const Header = () => {
                                 <li>Gravity Forms Development</li>
                             </ul>
                         </li>
-                        <li style={{ paddingBottom: '15px'}}>seo & ppc</li>
+                        <li style={{ paddingBottom: "15px" }}>seo & ppc</li>
                     </ul>
                 </div>
 
@@ -139,6 +166,61 @@ const Header = () => {
 
                 <div className={classes.buttonWrap}>
                     <button className={classes.navButton}>get a quote</button>
+                </div>
+            </div>
+
+            <img
+                src={HeaderLogo}
+                alt="header logo"
+                className={classes.mobileHeaderLogo}
+            />
+
+            <ul className={classes.mobileNavList} id="mobile-nav">
+                <li style={{ paddingTop: "10px" }}>Home</li>
+                <li>Our Work</li>
+                <li>Web Design</li>
+                <li className={classes.mobileWordpress}>
+                    <div>
+                        WordPress <ExpandMoreIcon />
+                    </div>
+                    <ul className={classes.mobileSubNavList}>
+                        <li>WordPress Development</li>
+                        <li>WordPress Hosting</li>
+                        <li>WordPress Plugins</li>
+                        <li style={{ paddingBottom: '10px'}}>WordPress Audits</li>
+                    </ul>
+                </li>
+                <li className={classes.mobileWordpress}>
+                    <div>
+                        Plugins <ExpandMoreIcon />
+                    </div>
+                    <ul className={classes.mobileSubNavList}>
+                        <li>WordPress API Integrations</li>
+                        <li>WordPress Multilingual</li>
+                        <li>WP Jobs Manager Development</li>
+                        <li>WordPress Booking Plugins</li>
+                        <li style={{ paddingBottom: '10px'}}>Gravity Forms Development</li>
+                    </ul>
+                </li>
+                <li>SEO & PPC</li>
+                <li>About</li>
+                <li>Get a Quote</li>
+            </ul>
+            <div className={classes.mobileMenu}>
+                <div>
+                    <PhoneIcon />
+                    Call
+                </div>
+
+                <div>
+                    <EmailIcon />
+                    Email
+                </div>
+
+                <div>
+                    <MenuIcon id="mobile-open-menu" className={classes.mobileOpenIcon} onClick={handleMobileMenuOpen} />
+                    <CloseIcon id="mobile-close-menu" className={classes.mobileCloseIcon} onClick={handleMobileMenuClose} />
+                    Menu
                 </div>
             </div>
         </>

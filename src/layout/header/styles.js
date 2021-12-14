@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
         "& > li": {
             padding: "15px 30px",
             textTransform: "uppercase",
-            cursor: 'pointer',
+            cursor: "pointer",
             "& > div": {
                 display: "flex",
                 alignItems: "center",
@@ -61,10 +61,10 @@ const useStyles = makeStyles((theme) => ({
 
     wordPressNav: {
         "&:hover": {
-           "& $subNavList": {
-               display: 'block'
-           }
-        }
+            "& $subNavList": {
+                display: "block",
+            },
+        },
     },
 
     subNavList: {
@@ -73,19 +73,19 @@ const useStyles = makeStyles((theme) => ({
         listStyle: "none",
         marginLeft: "-20px",
         marginTop: "15px",
-        borderRadius: '5px',
-        minWidth: '200px',
-        display: 'none',
-        cursor: 'pointer',
+        borderRadius: "5px",
+        minWidth: "200px",
+        display: "none",
+        cursor: "pointer",
         "& > li": {
             padding: "12px 20px",
-            textTransform: 'none',
-            cursor: 'pointer',
+            textTransform: "none",
+            cursor: "pointer",
             "&:hover": {
-                background: '#f64668',
-                color: '#fff',
-                cursor: 'pointer'
-            }
+                background: "#f64668",
+                color: "#fff",
+                cursor: "pointer",
+            },
         },
     },
 
@@ -108,76 +108,154 @@ const useStyles = makeStyles((theme) => ({
     },
 
     headerMenuIconWrap: {
-        marginTop: '15px'
+        marginTop: "15px",
     },
 
     headerMenuIcon: {
-        display: 'none'
+        display: "none",
     },
 
     headerMenuCloseIcon: {
-        display: 'none'
+        display: "none",
     },
 
     headerResMenu: {
-        position: 'absolute',
-        background: '#f2f2f2',
-        listStyle: 'none',
-        marginLeft: '-200px',
-        minWidth: '250px',
-        textTransform: 'uppercase',
-        borderRadius: '5px',
-        display: 'none',
+        position: "absolute",
+        background: "#f2f2f2",
+        listStyle: "none",
+        marginLeft: "-200px",
+        minWidth: "250px",
+        textTransform: "uppercase",
+        borderRadius: "5px",
+        display: "none",
         "& > li": {
-            paddingTop: '10px',
-            paddingLeft: '15px'
+            paddingTop: "10px",
+            paddingLeft: "15px",
         },
         "& > li > div": {
-            display: 'flex',
-            alignItems: 'center'
-        }
+            display: "flex",
+            alignItems: "center",
+        },
     },
 
     resSubNav: {
-        listStyle: 'none',
-        textTransform: 'none',
-        display: 'none',
+        listStyle: "none",
+        textTransform: "none",
+        display: "none",
         "& > li": {
-            padding: '5px 5px 5px 0'
-        }
+            padding: "5px 5px 5px 0",
+        },
     },
 
     resWordPressNav: {
         "&:hover": {
             "& $resSubNav": {
+                display: "block",
+            },
+        },
+    },
+
+    mobileMenu: {
+        display: "none",
+    },
+
+    mobileHeaderLogo: {
+        display: "none",
+    },
+
+    mobileNavList: {
+        position: 'fixed',
+        bottom: 0,
+        right: 0,
+        marginBottom: '80px',
+        marginRight: '20px',
+        background: '#f2f2f2',
+        minWidth: '200px',
+        listStyle: 'none',
+        paddingLeft: '15px',
+        paddingRight: '15px',
+        display: 'none',
+        "& > li": {
+            minHeight: '30px',
+            "& > div": {
+                display: 'flex',
+                alignItems: 'center'
+            }
+        }
+    },
+
+    mobileWordpress: {
+        "&:hover": {
+            "& $mobileSubNavList": {
                 display: 'block'
             }
         }
     },
 
+    mobileSubNavList: {
+        display: 'none',
+        "& > li": {
+            listStyle: 'none',
+            padding: '4px 0'
+        }
+    },
+
+    mobileCloseIcon: {
+        display: 'none'
+    },
+
     // Responsive Design
     [theme.breakpoints.down("md")]: {
         navList: {
-            display: 'none'
+            display: "none",
         },
         headerMenuIcon: {
-            display: 'block'
-        }
+            display: "block",
+        },
     },
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
         topLeftHeader: {
             "& > div": {
-                padding: '5px 7px'
-            }
+                padding: "5px 7px",
+            },
         },
         topRightHeader: {
             "& > div": {
-                padding: '5px'
-            }
-        }
+                padding: "5px",
+            },
+        },
     },
     [theme.breakpoints.down("xs")]: {
-        // do something
+        header: {
+            display: "none",
+        },
+        navbar: {
+            display: "none",
+        },
+        mobileHeaderLogo: {
+            display: "block",
+        },
+        mobileMenu: {
+            position: "fixed",
+            bottom: 0,
+            width: "100%",
+            display: "flex",
+            background: "#f64668",
+            justifyContent: "space-around",
+            "& > div": {
+                padding: "15px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                color: "#fff",
+            },
+        },
+        mobileHeaderLogo: {
+            width: "170px",
+            display: "block",
+            margin: "0 auto",
+            padding: "10px",
+        },
     },
 }));
 
