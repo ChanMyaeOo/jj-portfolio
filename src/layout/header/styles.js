@@ -243,7 +243,7 @@ const useStyles = makeStyles((theme) => ({
             background: "#f64668",
             justifyContent: "space-around",
             "& > div": {
-                padding: "15px",
+                padding: "5px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
