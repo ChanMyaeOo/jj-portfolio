@@ -1,11 +1,11 @@
 import React from 'react'
-import useStyles from './styles'
+// import useStyles from './styles'
+import Hero from '../../components/hero/Hero'
 
 const Home = () => {
-    const classes = useStyles()
     return (
         <div>
-            <h1 className={classes.title}>Home</h1>
+            <Hero />
         </div>
     )
 }

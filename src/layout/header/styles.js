@@ -232,9 +232,6 @@ const useStyles = makeStyles((theme) => ({
         navbar: {
             display: "none",
         },
-        mobileHeaderLogo: {
-            display: "block",
-        },
         mobileMenu: {
             position: "fixed",
             bottom: 0,
