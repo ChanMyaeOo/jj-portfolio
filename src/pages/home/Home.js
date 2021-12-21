@@ -2,6 +2,7 @@ import React from 'react'
 // import useStyles from './styles'
 import Hero from '../../components/hero/Hero'
 import Business from '../../components/business/Business'
+import Creating from '../../components/creating/Creating'
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
                 <Hero />
                 <Business />
             </div>
+            <Creating />
         </div>
     )
 }
