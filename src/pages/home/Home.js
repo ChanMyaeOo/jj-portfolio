@@ -5,6 +5,7 @@ import Business from '../../components/business/Business'
 import Creating from '../../components/creating/Creating'
 import Experts from '../../components/experts/Experts'
 import Hire from '../../components/hire/Hire'
+import Ad from '../../components/ad/Ad'
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Creating />
             <Experts />
             <Hire />
+            <Ad />
         </div>
     )
 }
