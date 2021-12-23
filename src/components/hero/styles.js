@@ -26,14 +26,14 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex'
     },
     arrowIcon: {
-        fontSize: '16px',
+        fontSize: '24px',
         paddingLeft: '10px'
     },
     heroBtn1: {
         padding: '10px 16px',
         textTransform: 'uppercase',
         fontWeight: 'bold',
-        borderRadius: '20px',
+        borderRadius: '25px',
         border: 'none',
         outline: 'none',
         background: '#984063',
@@ -42,13 +42,14 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 25px',
         display: 'flex',
         alignItems: 'center',
-        width: 'fit-content'
+        width: 'fit-content',
+        cursor: 'pointer'
     },
     heroBtn2: {
         padding: '10px 16px',
         textTransform: 'uppercase',
         fontWeight: 'bold',
-        borderRadius: '20px',
+        borderRadius: '25px',
         border: 'none',
         outline: 'none',
         background: '#f64668',
@@ -56,7 +57,8 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '16px',
         display: 'flex',
         alignItems: 'center',
-        width: 'fit-content'
+        width: 'fit-content',
+        cursor: 'pointer'
     },
     heroImgWrap: {
         width: '100%',
