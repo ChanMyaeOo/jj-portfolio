@@ -157,6 +157,7 @@ const useStyles = makeStyles((theme) => ({
 
     mobileMenu: {
         display: "none",
+        zIndex: '1000'
     },
 
     mobileHeaderLogo: {
@@ -175,6 +176,7 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: '15px',
         paddingRight: '15px',
         display: 'none',
+        zIndex: '1000',
         "& > li": {
             minHeight: '30px',
             "& > div": {

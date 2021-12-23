@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
     ad: {
-        backgroundColor: '#002839',
+        backgroundColor: '#2a3950',
         padding: '60px 0'
     },
     wpImg: {
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         textTransform: 'uppercase',
         color: '#fff',
-        backgroundColor: '#002839',
+        backgroundColor: '#2a3950',
         border: '1px solid #fff',
         display: 'block',
         margin: '0 auto',
