@@ -114,6 +114,82 @@ const useStyles = makeStyles((theme) => ({
         cursor: 'pointer',
         fontSize: '15px',
     },
+
+    gridWrap: {
+        padding: '20px'
+    },
+
+    footerBottom: {
+        backgroundColor: '#2a3950',
+        paddingTop: '60px'
+    },
+    fAboutTitle: {
+        fontSize: '22px',
+        color: '#fff',
+        fontWeight: 'bold',
+        marginBottom: '10px'
+    },
+    fAboutContact: {
+        color: '#fff',
+        lineHeight: '1.5rem',
+        marginBottom: '20px'
+    },
+    fAboutSchedule: {
+        color: '#fff',
+        display: 'flex',
+        justifyContent: 'space-between',
+        fontSize: '17px',
+        marginBottom: '7px'
+    },
+    fLocationTitle: {
+        fontSize: '22px',
+        fontWeight: 'bold',
+        color: '#fff',
+        marginBottom: '20px'
+    },
+    fNewsTitle: {
+        fontSize: '22px',
+        color: '#fff',
+        fontWeight: 'bold',
+        marginBottom: '20px'
+    },
+    fNewsForm: {
+        display: 'flex',
+        flexDirection: 'column',
+        "& > input": {
+            height: '42px',
+            padding: '5px',
+            marginBottom: '10px'
+        }
+    },
+    fNewsBtn: {
+        background: '#f64668',
+        color: '#fff',
+        fontWeight: 'bold',
+        fontSize: '15px',
+        cursor: 'pointer',
+        border: 'none',
+        outline: 'none'
+    },
+    fHr: {
+        border: 'none',
+        height: '1px',
+        background: '#f4f4f4'
+    },
+    fPolicy: {
+        marginTop: '60px'
+    },
+    fPolicyWrap: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: '10px',
+        color: '#fff'
+    },
+    policyWrap: {
+        "& > span": {
+            padding: '0 6px'
+        }
+    },
     // Responsive Design
     [theme.breakpoints.down('sm')]: {
         footerTop: {
@@ -121,10 +197,22 @@ const useStyles = makeStyles((theme) => ({
         },
         touchHeader: {
             fontSize: '30px'
+        },
+        footerLocation: {
+            display: 'none'
         }
     },
     [theme.breakpoints.down('xs')]: {
-       // do something
+       fPolicy: {
+           marginBottom: '60px'
+       },
+       fPolicyWrap: {
+           flexDirection: 'column'
+       },
+       copyright: {
+           marginTop: '10px',
+           paddingLeft: '6px'
+       }
     },
 }));
 
