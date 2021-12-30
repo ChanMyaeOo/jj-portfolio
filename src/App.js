@@ -7,6 +7,7 @@ import {
 import ScrollToTop from './utils/ScrollToTop'
 import Layout from './layout/Layout'
 import Home from './pages/home/Home'
+import About from './pages/about/About'
 import './style.css'
 
 const App = () => {
@@ -15,6 +16,11 @@ const App = () => {
             <Router>
                 <ScrollToTop />
                 <Switch>
+                    <Route path="/about">
+                        <Layout>
+                            <About />
+                        </Layout>
+                    </Route>
                     <Route path="/">
                         <Layout>
                             <Home />

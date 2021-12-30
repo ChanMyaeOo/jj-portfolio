@@ -212,6 +212,9 @@ const useStyles = makeStyles((theme) => ({
        copyright: {
            marginTop: '10px',
            paddingLeft: '6px'
+       },
+       touchHeader: {
+           fontSize: '28px'
        }
     },
 }));
