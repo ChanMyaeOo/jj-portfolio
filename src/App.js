@@ -9,6 +9,7 @@ import Layout from './layout/Layout'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Portfolio from './pages/portfolio/Portfolio'
+import Design from './pages/design/Design'
 import './style.css'
 
 const App = () => {
@@ -17,6 +18,11 @@ const App = () => {
             <Router>
                 <ScrollToTop />
                 <Switch>
+                    <Route path="/web-design">
+                        <Layout>
+                            <Design />
+                        </Layout>
+                    </Route>
                     <Route path="/portfolio">
                         <Layout>
                             <Portfolio />
