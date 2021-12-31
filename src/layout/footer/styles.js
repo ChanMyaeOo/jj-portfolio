@@ -118,6 +118,9 @@ const useStyles = makeStyles((theme) => ({
     gridWrap: {
         padding: '20px'
     },
+    footerLocation: {
+        padding: '20px'
+    },
 
     footerBottom: {
         backgroundColor: '#2a3950',
