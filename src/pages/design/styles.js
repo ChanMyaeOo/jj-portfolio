@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
     wpContentWrap: {
-        padding: '60px 0'
+        padding: '60px 0',
     },
     wdTitle: {
         fontSize: '52px',
@@ -22,13 +22,21 @@ const useStyles = makeStyles((theme) => ({
 
     // Responsive Design
     [theme.breakpoints.down('md')]: {
-       
+       wdTitle: {
+           fontSize: '34px'
+       }
     },
     [theme.breakpoints.down('sm')]: {
         
     },
     [theme.breakpoints.down('xs')]: {
-       
+       wdTitle: {
+           fontSize: '32px'
+       },
+       wdContent: {
+           fontSize: '19px',
+           width: '85%'
+       }
     },
 }));
 
