@@ -30,6 +30,17 @@ const Design = () => {
             <Stage stage="Stage 1" title="Website Research" paraCount={3} para1={stagePara1} para2={stagePara2} para3={stagePara3} stageBtn="arrange a call with our web designer" stageImgUrl={Stage1Img}/>
 
             <WdFacts />
+
+            <div className={classes.designRes}>
+                <h3 className={classes.designResTitle}>Web Design that Looks Great on Any Screen</h3>
+                <p className={classes.designResMain}>Mobile, Tablet, and Desktop – it's now possible to have a perfect website on any device! Responsive web design is an approach to web development focusing on the creation of one web site that can adapt to the device accessing it.</p>
+                <br/>
+                <p className={classes.designResSub}>During the design phase, we create responsive wireframes and designs using Adobe XD. These designs are linked to enable you to get a feel for the website before it is coded into WordPress and enables you to provide feedback on the website designs.</p>
+                <br/>
+                <p className={classes.designResSub}>Responsive design is done by reordering and resizing columns, images, text, and design elements for optimal display on desktop, tablet and mobile devices. A mobile and tablet menu is created and any elements that aren’t required on the mobile device are hidden.</p>
+                <br/>
+                <p className={classes.designResSub}>The image and code are optimised to ensure that your website loads quickly on a range of mobile devices, which is essential for good rankings.</p>
+            </div>
         </div>
     )
 }
