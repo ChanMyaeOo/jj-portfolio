@@ -8,6 +8,7 @@ import Stage from '../../components/stage/Stage'
 import Stage1Img from '../../images/wd-stage1.png'
 import useStyles from './styles'
 import WdFacts from '../../components/wd-facts/WdFacts'
+import DesignFaq from './design-faq/DesignFaq'
 
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 
@@ -41,6 +42,8 @@ const Design = () => {
                 <br/>
                 <p className={classes.designResSub}>The image and code are optimised to ensure that your website loads quickly on a range of mobile devices, which is essential for good rankings.</p>
             </div>
+            
+            <DesignFaq />
         </div>
     )
 }
