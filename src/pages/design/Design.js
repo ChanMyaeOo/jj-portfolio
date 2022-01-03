@@ -7,6 +7,9 @@ import WpDesign4 from '../../images/wp-design4.webp'
 import Stage from '../../components/stage/Stage'
 import Stage1Img from '../../images/wd-stage1.png'
 import useStyles from './styles'
+import WdFacts from '../../components/wd-facts/WdFacts'
+
+import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 
 const Design = () => {
     const title = "London WordPress Web Design"
@@ -26,6 +29,7 @@ const Design = () => {
 
             <Stage stage="Stage 1" title="Website Research" paraCount={3} para1={stagePara1} para2={stagePara2} para3={stagePara3} stageBtn="arrange a call with our web designer" stageImgUrl={Stage1Img}/>
 
+            <WdFacts />
         </div>
     )
 }
