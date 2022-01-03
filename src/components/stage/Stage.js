@@ -4,14 +4,14 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { Grid } from '@material-ui/core'
 import useStyles from './styles'
 
-const Stage = ({ stageImgUrl, stageBtn, paraCount, para1, para2, para3}) => {
+const Stage = ({ stage, title, stageImgUrl, stageBtn, paraCount, para1, para2, para3, para4}) => {
     const classes = useStyles()
     
     return (
         <Grid container className={classes.stageWrap}>
             <Grid item lg={6} md={6} sm={12}>
-                <h3 className={classes.stageCount}>Stage1</h3>
-                <h3 className={classes.stageTitle}>Website Research</h3>
+                <h3 className={classes.stageCount}>{stage}</h3>
+                <h3 className={classes.stageTitle}>{title}</h3>
                 {
                     paraCount === 3 && (
                         <>
@@ -22,6 +22,22 @@ const Stage = ({ stageImgUrl, stageBtn, paraCount, para1, para2, para3}) => {
                                 <br/>
                                 <p>{para3}</p>
                                 <br/>
+                            </div>
+                        </>
+                    )
+                }
+
+                {
+                    paraCount === 4 && (
+                        <>
+                            <div className={classes.stageContent}>
+                                <p>{para1}</p>
+                                <br/>
+                                <p>{para2}</p>
+                                <br/>
+                                <p>{para3}</p>
+                                <br/>
+                                <p>{para4}</p>
                             </div>
                         </>
                     )
