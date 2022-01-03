@@ -15,6 +15,7 @@ import Stage7Img from '../../images/wd-stage7.png'
 import useStyles from './styles'
 import WdFacts from '../../components/wd-facts/WdFacts'
 import DesignFaq from './design-faq/DesignFaq'
+import Creating from '../../components/creating/Creating'
 
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 
@@ -49,6 +50,7 @@ const Design = () => {
     const stage7Para2 = "It’s the practice of building a website that is flexible and can fit into any screen size without losing content or layout clarity. Also known as mobile-first development, responsive design aims to serve a single website to users with different devices, platforms and browsers."
     const stage7Para3 = "We design all websites using Adobe XD to create and present responsive website designs that are uploaded to an website for review and feedback."
     const stage7Para4 = "Arrange a call with a WordPress web designer at our London web design agency to discuss your project further."
+    const wdContent = "We provide custom WordPress web design, web development and digital marketing and SEO services for businesses. View our recent web design projects to see how we've helped these companies grow their online presence, gain a competitive advantage and a good return on their investment"
     return (
         <div style={{ background: '#f2f2f2'}}>
             <Hero title={title} content={content} HeroImg1={WpDesign1} HeroImg2={WpDesign2} HeroImg3={WpDesign3} HeroImg4={WpDesign4}/>
@@ -65,6 +67,7 @@ const Design = () => {
             <Stage stage="Stage 5" title="Website Images & Video" paraCount={4} para1={stage5Para1} para2={stage5Para2} para3={stage5Para3} para4={stage5Para4} stageBtn="arrange a call with a designer" stageImgUrl={Stage5Img}/>
             <Stage stage="Stage 6" title="Website Illustrations & Icons" paraCount={4} para1={stage6Para1} para2={stage6Para2} para3={stage6Para3} para4={stage6Para4} stageBtn="message us to get started" stageImgUrl={Stage6Img}/>
             <Stage stage="Stage 7" title="Responsive Web Design" paraCount={4} para1={stage7Para1} para2={stage7Para2} para3={stage7Para3} para4={stage7Para4} stageBtn="start growing your business" stageImgUrl={Stage7Img}/>
+            <Creating title="We Design WordPress Websites" content={wdContent}/>
 
             <WdFacts />
 
