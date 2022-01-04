@@ -10,6 +10,7 @@ import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Portfolio from './pages/portfolio/Portfolio'
 import Design from './pages/design/Design'
+import WdDevelopment from './pages/wd-development/WdDevelopment'
 import './style.css'
 
 const App = () => {
@@ -18,6 +19,11 @@ const App = () => {
             <Router>
                 <ScrollToTop />
                 <Switch>
+                    <Route path="/wordpress-development">
+                        <Layout>
+                            <WdDevelopment />
+                        </Layout>
+                    </Route>
                     <Route path="/web-design">
                         <Layout>
                             <Design />
