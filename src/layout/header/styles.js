@@ -155,6 +155,15 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 
+    fixedHeader: {
+        zIndex: '1400',
+        position: 'fixed',
+        top: 0,
+        width: '100%',
+        background: "#fff",
+        boxShadow: '0px 2px 2px rgba(0,0,0,0.5)'
+    },
+
     mobileMenu: {
         display: "none",
         zIndex: '1000'

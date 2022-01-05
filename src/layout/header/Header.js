@@ -51,6 +51,22 @@ const Header = () => {
         closeMenu.style.display = 'none'
     }
 
+    // to handle header fixed on scroll
+    const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop;
+        const headerElement = document.getElementById("header")
+        // const resHeaderElement = document.getElementById("mobResMenuWrapper")
+        if (scrolled > 300) {
+            headerElement.classList.add(classes.fixedHeader)
+            // resHeaderElement.classList.add(classes.fixedHeader)
+        } else if (scrolled <= 300) {
+            headerElement.classList.remove(classes.fixedHeader)
+            // resHeaderElement.classList.remove(classes.fixedHeader)
+        }
+    };
+    
+    window.addEventListener("scroll", toggleVisible);
+
     return (
         <>
             <div className={classes.header}>
@@ -82,7 +98,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className={classes.navbar}>
+            <div className={classes.navbar} id="header">
                 <img
                     src={HeaderLogo}
                     alt="header-logo"
