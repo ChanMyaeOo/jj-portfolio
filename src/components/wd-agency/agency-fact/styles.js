@@ -5,7 +5,9 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: '0px 0px 4px 0px rgb(0 0 0 / 30%) inset',
         padding: '25px',
         width: '380px',
-        margin: '20px'
+        margin: '20px',
+        backgroundColor: '#fff',
+        borderRadius: '10px'
     },
     agIcon: {
         fontSize: '55px',
@@ -25,7 +27,9 @@ const useStyles = makeStyles((theme) => ({
 
     // Responsive Design
     [theme.breakpoints.down('md')]: {
-        // do something
+        agTitle: {
+            fontSize: '20px'
+        }
     },
     [theme.breakpoints.down('sm')]: {
        agWrap: {
