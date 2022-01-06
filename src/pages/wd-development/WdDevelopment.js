@@ -12,6 +12,7 @@ import WdImg4 from "../../images/wdd4.webp";
 import Hero from "../../components/hero/Hero";
 import WdAgency from "../../components/wd-agency/WdAgency";
 import useStyles from "./styles";
+import ApiIntegration from './api-integration/ApiIntegration'
 
 const WdDevelopment = () => {
     const classes = useStyles();
@@ -92,6 +93,8 @@ const WdDevelopment = () => {
                 </p>
             </div>
             <div className={classes.wdDivider}></div>
+
+            <ApiIntegration />
         </div>
     );
 };
