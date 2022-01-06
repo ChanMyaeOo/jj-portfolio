@@ -1,18 +1,20 @@
 import React from "react";
 import DeveloperBoardIcon from "@material-ui/icons/DeveloperBoard";
 import PowerIcon from "@material-ui/icons/Power";
-import StorageIcon from '@material-ui/icons/Storage';
-import ListAltIcon from '@material-ui/icons/ListAlt';
-import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
-import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
+import StorageIcon from "@material-ui/icons/Storage";
+import ListAltIcon from "@material-ui/icons/ListAlt";
+import DirectionsRunIcon from "@material-ui/icons/DirectionsRun";
+import CompareArrowsIcon from "@material-ui/icons/CompareArrows";
 import WdImg1 from "../../images/wdd1.webp";
 import WdImg2 from "../../images/wdd2.webp";
 import WdImg3 from "../../images/wdd3.png";
 import WdImg4 from "../../images/wdd4.webp";
 import Hero from "../../components/hero/Hero";
 import WdAgency from "../../components/wd-agency/WdAgency";
+import useStyles from "./styles";
 
 const WdDevelopment = () => {
+    const classes = useStyles();
     const title = "London WordPress Developers";
     const content =
         "WP Agency is an Award-Winning WordPress development agency based in London. Our WordPress developers build high-performing websites using customised theme and plugins. Over 14+ years of experience – WordPress API Integration, Bug Fixes, Hosting & Support.";
@@ -26,14 +28,18 @@ const WdDevelopment = () => {
     const agFactTitle2 = "WordPress API Integration";
     const agFactContent2 =
         "WordPress API Integration allows us to connect external applications to your WordPress site via an API, enabling the interaction of booking platforms, job boards, payment gateways, interactive maps, video and CRM systems.";
-    const agFactTitle3 = "WordPress Hosting & Support"
-    const agFactContent3 = "WordPress hosting and support from WP Engine and Cloudflare including fast, reliable servers tailored for WordPress sites, daily backups with CDN and caching for faster website loading, SSL certificates for secure load times."
-    const agFactTitle4 = "WordPress Audit"
-    const agFactContent4 = "Our intelligent WordPress Audit works by checking for a large number of issues in a WordPress site for issues such as broken links, large images, slow page loading time and missing meta descriptions and titles, among other problems."
-    const agFactTitle5 = "WordPress Optimisation"
-    const agFactContent5 = "We work on your site and improve the loading speed by removing duplicate code from themes, optimising images, removing unused CSS and JS files from your site and optimising your server configuration to help bring you a faster website."
-    const agFactTitle6 = "WordPress Multisite"
-    const agFactContent6 = "WordPress multisite networks allows multiple subsides to be managed from a single install. Each subsite is independent but takes advantage of the core features of the main WordPress site including themes, widgets and plugins."
+    const agFactTitle3 = "WordPress Hosting & Support";
+    const agFactContent3 =
+        "WordPress hosting and support from WP Engine and Cloudflare including fast, reliable servers tailored for WordPress sites, daily backups with CDN and caching for faster website loading, SSL certificates for secure load times.";
+    const agFactTitle4 = "WordPress Audit";
+    const agFactContent4 =
+        "Our intelligent WordPress Audit works by checking for a large number of issues in a WordPress site for issues such as broken links, large images, slow page loading time and missing meta descriptions and titles, among other problems.";
+    const agFactTitle5 = "WordPress Optimisation";
+    const agFactContent5 =
+        "We work on your site and improve the loading speed by removing duplicate code from themes, optimising images, removing unused CSS and JS files from your site and optimising your server configuration to help bring you a faster website.";
+    const agFactTitle6 = "WordPress Multisite";
+    const agFactContent6 =
+        "WordPress multisite networks allows multiple subsides to be managed from a single install. Each subsite is independent but takes advantage of the core features of the main WordPress site including themes, widgets and plugins.";
 
     return (
         <div style={{ background: "#f2f2f2" }}>
@@ -70,6 +76,22 @@ const WdDevelopment = () => {
                 btn={wdAgBtn}
                 count={6}
             />
+
+            <div className={classes.wdDivider}></div>
+            <div className={classes.wdProcessWrap}>
+                <h3 className={classes.processTitle}>
+                    The Process of building a WordPress site
+                </h3>
+                <p className={classes.processContent}>
+                    Our WordPress development process helps us build robust,
+                    scalable sites that run fast. Our methods of customising
+                    WordPress, along with our favourite tools for WordPress
+                    development, help us deliver innovative platforms that can
+                    scale to fit your needs. A typical WordPress development
+                    process includes:
+                </p>
+            </div>
+            <div className={classes.wdDivider}></div>
         </div>
     );
 };
