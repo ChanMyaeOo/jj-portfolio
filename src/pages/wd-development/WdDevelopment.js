@@ -14,6 +14,7 @@ import WdAgency from "../../components/wd-agency/WdAgency";
 import useStyles from "./styles";
 import ApiIntegration from './api-integration/ApiIntegration'
 import WpMultilingual from './wp-multilingual/WpMultilingual'
+import WdHosting from './wd-hosting/WdHosting'
 
 const WdDevelopment = () => {
     const classes = useStyles();
@@ -98,6 +99,8 @@ const WdDevelopment = () => {
             <ApiIntegration />
 
             <WpMultilingual />
+
+            <WdHosting />
         </div>
     );
 };
