@@ -13,6 +13,7 @@ import Hero from "../../components/hero/Hero";
 import WdAgency from "../../components/wd-agency/WdAgency";
 import useStyles from "./styles";
 import ApiIntegration from './api-integration/ApiIntegration'
+import WpMultilingual from './wp-multilingual/WpMultilingual'
 
 const WdDevelopment = () => {
     const classes = useStyles();
@@ -95,6 +96,8 @@ const WdDevelopment = () => {
             <div className={classes.wdDivider}></div>
 
             <ApiIntegration />
+
+            <WpMultilingual />
         </div>
     );
 };
