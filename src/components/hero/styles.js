@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
             margin: '20px 0',
             width: '55%',
             textAlign: 'center',
-            lineHeight: '1.5rem'
+            lineHeight: '1.8rem',
         }
     },
     heroBtnWrap: {
