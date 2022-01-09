@@ -8,7 +8,7 @@ import useStyles from './styles'
 const WpMultilingual = () => {
     const classes = useStyles()
     return (
-        <div>
+        <div className={classes.wpMultiContainer}>
             <h3 className={classes.multiTitle}>WordPress Multilingual Plugin</h3>
             <p className={classes.multiContent}>WPML is the most powerful, professional WordPress plugin to create multilingual websites and blogs compatible with all existing WordPress themes. Our WordPress developers configure the multilingual plugin to provide content translation for posts, pages, products, BuddyPress and bbPress, custom post types, widgets and navigation menus.</p>
             <div className={classes.wpMultiWrap}>

@@ -30,6 +30,7 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import InsertChartIcon from '@material-ui/icons/InsertChart';
 import MmsIcon from '@material-ui/icons/Mms';
 import WdFacts from '../../components/wd-facts/WdFacts'
+import Creating from '../../components/creating/Creating'
 
 
 
@@ -90,6 +91,8 @@ const WdDevelopment = () => {
     const wdFContent8 = "Contact forms with set field are essential to gain sales leads from your website by giving visitors the opportunity to easily contact you with relevant details."
     const factTitle= "We Enhance WordPress with Plugins"
     const factContent = "WordPress plugins extend the capabilities of a WordPress website or blog with additional features and functionality. Our WordPress developer will help you choose the right plugins based on your needs and industry."
+    const wdCreateTitle = "Developing Websites With WordPress"
+    const wdCreateContent = "We create a high-performing and easily-managed WordPress websites with the flexibility of a drag-and-drop Page Builder that is responsive to provide an optimum viewing experience for website visitors on desktop, tablet and mobile devices. "
 
     return (
         <div style={{ background: "#f2f2f2" }}>
@@ -180,10 +183,16 @@ const WdDevelopment = () => {
                 factIcon7={InsertChartIcon}
                 factIcon8={MmsIcon}
             />
+            <WdDivider />
             <ApiIntegration />
-
+            <WdDivider />
             <WpMultilingual />
-
+            <WdDivider />
+            <Creating 
+                title={wdCreateTitle}
+                content={wdCreateContent}
+            />
+            <WdDivider />
             <WdHosting />
         </div>
     );

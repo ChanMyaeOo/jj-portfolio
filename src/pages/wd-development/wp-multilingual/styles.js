@@ -1,6 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+    wpMultiContainer: {
+        padding: '60px 0'
+    },
     
     wpMultiWrap: {
         display: 'flex',
