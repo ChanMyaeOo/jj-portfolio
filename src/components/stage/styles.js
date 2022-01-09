@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         textDecoration: 'none',
-        fontSize: '15px',
+        fontSize: '14px',
         textTransform: 'uppercase',
         fontWeight: 'bold',
         color: '#fff',
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
         width: 'fit-content',
         padding: '10px 15px',
         borderRadius: '20px',
-        marginTop: '25px'
+        marginTop: '25px',
     },
     arrow: {
         fontSize: '15px',

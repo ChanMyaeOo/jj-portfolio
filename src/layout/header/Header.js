@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ApartmentIcon from "@material-ui/icons/Apartment";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
@@ -35,36 +36,36 @@ const Header = () => {
 
     const handleMobileMenuOpen = () => {
         const resOverlay = document.getElementById("mobile-nav");
-        const openMenu = document.getElementById("mobile-open-menu")
-        const closeMenu = document.getElementById("mobile-close-menu")
-        resOverlay.style.display = 'block'
-        openMenu.style.display = 'none'
-        closeMenu.style.display = 'block'
-    }
+        const openMenu = document.getElementById("mobile-open-menu");
+        const closeMenu = document.getElementById("mobile-close-menu");
+        resOverlay.style.display = "block";
+        openMenu.style.display = "none";
+        closeMenu.style.display = "block";
+    };
 
     const handleMobileMenuClose = () => {
         const resOverlay = document.getElementById("mobile-nav");
-        const openMenu = document.getElementById("mobile-open-menu")
-        const closeMenu = document.getElementById("mobile-close-menu")
-        resOverlay.style.display = 'none'
-        openMenu.style.display = 'block'
-        closeMenu.style.display = 'none'
-    }
+        const openMenu = document.getElementById("mobile-open-menu");
+        const closeMenu = document.getElementById("mobile-close-menu");
+        resOverlay.style.display = "none";
+        openMenu.style.display = "block";
+        closeMenu.style.display = "none";
+    };
 
     // to handle header fixed on scroll
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
-        const headerElement = document.getElementById("header")
+        const headerElement = document.getElementById("header");
         // const resHeaderElement = document.getElementById("mobResMenuWrapper")
         if (scrolled > 300) {
-            headerElement.classList.add(classes.fixedHeader)
+            headerElement.classList.add(classes.fixedHeader);
             // resHeaderElement.classList.add(classes.fixedHeader)
         } else if (scrolled <= 300) {
-            headerElement.classList.remove(classes.fixedHeader)
+            headerElement.classList.remove(classes.fixedHeader);
             // resHeaderElement.classList.remove(classes.fixedHeader)
         }
     };
-    
+
     window.addEventListener("scroll", toggleVisible);
 
     return (
@@ -99,11 +100,13 @@ const Header = () => {
             </div>
 
             <div className={classes.navbar} id="header">
-                <img
-                    src={HeaderLogo}
-                    alt="header-logo"
-                    className={classes.logoImg}
-                />
+                <Link to="/">
+                    <img
+                        src={HeaderLogo}
+                        alt="header-logo"
+                        className={classes.logoImg}
+                    />
+                </Link>
 
                 <div>
                     <div className={classes.headerMenuIconWrap}>
@@ -120,13 +123,19 @@ const Header = () => {
                     </div>
 
                     <ul className={classes.headerResMenu} id="res-overlay">
-                        <li>about</li>
-                        <li>our work</li>
-                        <li>web design</li>
+                        <li>
+                            <Link to="/">about</Link>
+                        </li>
+                        <li>
+                            <Link to="/portfolio">our work</Link>
+                        </li>
+                        <li>
+                            <Link to="/web-design">web design</Link>
+                        </li>
                         <li className={classes.resWordPressNav}>
-                            <div>
+                            <Link to="/wordpress-development">
                                 wordpress <AddIcon />
-                            </div>
+                            </Link>
                             <ul className={classes.resSubNav}>
                                 <li>WordPress Development</li>
                                 <li>WordPress Hosting</li>
@@ -135,9 +144,9 @@ const Header = () => {
                             </ul>
                         </li>
                         <li className={classes.resWordPressNav}>
-                            <div>
+                            <Link to="/">
                                 plugins <AddIcon />
-                            </div>
+                            </Link>
                             <ul className={classes.resSubNav}>
                                 <li>WordPress API Integrations</li>
                                 <li>WordPress Multilingual</li>
@@ -146,18 +155,26 @@ const Header = () => {
                                 <li>Gravity Forms Development</li>
                             </ul>
                         </li>
-                        <li style={{ paddingBottom: "15px" }}>seo & ppc</li>
+                        <li style={{ paddingBottom: "15px" }}>
+                            <Link to="/">seo & ppc</Link>
+                        </li>
                     </ul>
                 </div>
 
                 <ul className={classes.navList}>
-                    <li>about</li>
-                    <li>our work</li>
-                    <li>web design</li>
+                    <li>
+                        <Link to="/web-design">about</Link>
+                    </li>
+                    <li>
+                        <Link to="/portfolio">our work</Link>
+                    </li>
+                    <li>
+                        <Link to="/web-design">web design</Link>
+                    </li>
                     <li className={classes.wordPressNav}>
-                        <div>
+                        <Link to="/wordpress-development">
                             wordpress <AddIcon />
-                        </div>
+                        </Link>
                         <ul className={classes.subNavList}>
                             <li>WordPress Development</li>
                             <li>WordPress Hosting</li>
@@ -166,9 +183,9 @@ const Header = () => {
                         </ul>
                     </li>
                     <li className={classes.wordPressNav}>
-                        <div>
+                        <Link to="/">
                             plugins <AddIcon />
-                        </div>
+                        </Link>
                         <ul className={classes.subNavList}>
                             <li>WordPress API Integrations</li>
                             <li>WordPress Multilingual</li>
@@ -177,7 +194,9 @@ const Header = () => {
                             <li>Gravity Forms Development</li>
                         </ul>
                     </li>
-                    <li>seo & ppc</li>
+                    <li>
+                        <Link to="/">seo & ppc</Link>
+                    </li>
                 </ul>
 
                 <div className={classes.buttonWrap}>
@@ -185,42 +204,60 @@ const Header = () => {
                 </div>
             </div>
 
-            <img
-                src={HeaderLogo}
-                alt="header logo"
-                className={classes.mobileHeaderLogo}
-            />
+            <Link to="/">
+                <img
+                    src={HeaderLogo}
+                    alt="header logo"
+                    className={classes.mobileHeaderLogo}
+                />
+            </Link>
 
             <ul className={classes.mobileNavList} id="mobile-nav">
-                <li style={{ paddingTop: "10px" }}>Home</li>
-                <li>Our Work</li>
-                <li>Web Design</li>
+                <li style={{ paddingTop: "3px", marginTop: "15px" }}>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/portfolio">Our Work</Link>
+                </li>
+                <li>
+                    <Link to="/web-design">Web Design</Link>
+                </li>
                 <li className={classes.mobileWordpress}>
-                    <div>
+                    <Link to="/wordpress-development">
                         WordPress <ExpandMoreIcon />
-                    </div>
+                    </Link>
                     <ul className={classes.mobileSubNavList}>
                         <li>WordPress Development</li>
                         <li>WordPress Hosting</li>
                         <li>WordPress Plugins</li>
-                        <li style={{ paddingBottom: '10px'}}>WordPress Audits</li>
+                        <li style={{ paddingBottom: "10px" }}>
+                            WordPress Audits
+                        </li>
                     </ul>
                 </li>
                 <li className={classes.mobileWordpress}>
-                    <div>
+                    <Link to="/">
                         Plugins <ExpandMoreIcon />
-                    </div>
+                    </Link>
                     <ul className={classes.mobileSubNavList}>
                         <li>WordPress API Integrations</li>
                         <li>WordPress Multilingual</li>
                         <li>WP Jobs Manager Development</li>
                         <li>WordPress Booking Plugins</li>
-                        <li style={{ paddingBottom: '10px'}}>Gravity Forms Development</li>
+                        <li style={{ paddingBottom: "10px" }}>
+                            Gravity Forms Development
+                        </li>
                     </ul>
                 </li>
-                <li>SEO & PPC</li>
-                <li>About</li>
-                <li>Get a Quote</li>
+                <li>
+                    <Link to="/">SEO & PPC</Link>
+                </li>
+                <li>
+                    <Link to="/">About</Link>
+                </li>
+                <li>
+                    <Link to="/">Get a Quote</Link>
+                </li>
             </ul>
             <div className={classes.mobileMenu}>
                 <div>
@@ -234,8 +271,16 @@ const Header = () => {
                 </div>
 
                 <div>
-                    <MenuIcon id="mobile-open-menu" className={classes.mobileOpenIcon} onClick={handleMobileMenuOpen} />
-                    <CloseIcon id="mobile-close-menu" className={classes.mobileCloseIcon} onClick={handleMobileMenuClose} />
+                    <MenuIcon
+                        id="mobile-open-menu"
+                        className={classes.mobileOpenIcon}
+                        onClick={handleMobileMenuOpen}
+                    />
+                    <CloseIcon
+                        id="mobile-close-menu"
+                        className={classes.mobileCloseIcon}
+                        onClick={handleMobileMenuClose}
+                    />
                     Menu
                 </div>
             </div>

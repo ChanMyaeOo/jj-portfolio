@@ -52,9 +52,14 @@ const useStyles = makeStyles((theme) => ({
             padding: "15px 30px",
             textTransform: "uppercase",
             cursor: "pointer",
-            "& > div": {
+            "& > a": {
                 display: "flex",
                 alignItems: "center",
+                textDecoration: 'none',
+                color: '#000',
+                "&:hover": {
+                    color: '#f64668'
+                }
             },
         },
     },
@@ -132,9 +137,11 @@ const useStyles = makeStyles((theme) => ({
             paddingTop: "10px",
             paddingLeft: "15px",
         },
-        "& > li > div": {
+        "& > li > a": {
             display: "flex",
             alignItems: "center",
+            textDecoration: 'none',
+            color: '#000'
         },
     },
 
@@ -187,10 +194,12 @@ const useStyles = makeStyles((theme) => ({
         display: 'none',
         zIndex: '1000',
         "& > li": {
-            minHeight: '30px',
-            "& > div": {
+            minHeight: '40px',
+            "& > a": {
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
+                textDecoration: 'none',
+                color: '#000'
             }
         }
     },
@@ -207,7 +216,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'none',
         "& > li": {
             listStyle: 'none',
-            padding: '4px 0'
+            // padding: '4px 0',
+            lineHeight: '1.9rem'
         }
     },
 
