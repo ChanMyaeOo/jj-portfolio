@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     wdFactsWrap: {
         backgroundColor: '#2a3950',
-        padding: '60px 0'
+        padding: '60px 30px'
     },  
     wpFactsTitle: {
         fontSize: '52px',

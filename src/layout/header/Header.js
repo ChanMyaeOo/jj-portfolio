@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ApartmentIcon from "@material-ui/icons/Apartment";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
@@ -12,6 +12,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import useStyles from "./styles";
 import HeaderLogo from "../../images/header-logo.jpg";
+import './style.css'
 
 const Header = () => {
     const classes = useStyles();
@@ -122,6 +123,7 @@ const Header = () => {
                         />
                     </div>
 
+                    {/* for i pad view */}
                     <ul className={classes.headerResMenu} id="res-overlay">
                         <li>
                             <Link to="/">about</Link>
@@ -161,20 +163,21 @@ const Header = () => {
                     </ul>
                 </div>
 
+                {/* for desktop view */}
                 <ul className={classes.navList}>
                     <li>
-                        <Link to="/web-design">about</Link>
+                        <NavLink to="/about" activeClassName="active">about</NavLink>
                     </li>
                     <li>
-                        <Link to="/portfolio">our work</Link>
+                        <NavLink to="/portfolio">our work</NavLink>
                     </li>
                     <li>
-                        <Link to="/web-design">web design</Link>
+                        <NavLink to="/web-design">web design</NavLink>
                     </li>
                     <li className={classes.wordPressNav}>
-                        <Link to="/wordpress-development">
+                        <NavLink to="/wordpress-development">
                             wordpress <AddIcon />
-                        </Link>
+                        </NavLink>
                         <ul className={classes.subNavList}>
                             <li>WordPress Development</li>
                             <li>WordPress Hosting</li>
@@ -183,9 +186,9 @@ const Header = () => {
                         </ul>
                     </li>
                     <li className={classes.wordPressNav}>
-                        <Link to="/">
+                        <NavLink to="/plugins">
                             plugins <AddIcon />
-                        </Link>
+                        </NavLink>
                         <ul className={classes.subNavList}>
                             <li>WordPress API Integrations</li>
                             <li>WordPress Multilingual</li>
@@ -195,7 +198,7 @@ const Header = () => {
                         </ul>
                     </li>
                     <li>
-                        <Link to="/">seo & ppc</Link>
+                        <NavLink to="/seo">seo & ppc</NavLink>
                     </li>
                 </ul>
 

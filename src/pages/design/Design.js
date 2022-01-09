@@ -18,8 +18,14 @@ import WdFacts from '../../components/wd-facts/WdFacts'
 import DesignFaq from './design-faq/DesignFaq'
 import Creating from '../../components/creating/Creating'
 import Experts from '../../components/experts/Experts'
-
+import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
+import CommentIcon from '@material-ui/icons/Comment';
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
+import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import ViewColumnIcon from '@material-ui/icons/ViewColumn';
+import ChatIcon from '@material-ui/icons/Chat';
 
 const Design = () => {
     const title = "London WordPress Web Design"
@@ -61,6 +67,24 @@ const Design = () => {
     const expSubPara3 = "Our websites don’t just look good – they’re designed to perform, generate sales leads and conversions. If you’re looking to increase your visibility, generate interest or boost revenue, our WordPress web designer can help you to achieve your goals."
     const expSubPara4 = "Contact us to discuss your WordPress project with a web designer at our London web design agency to provide you with a quotation."
     const expBtn = "request a website design quote"
+    const factTitle = "We convert ideas into websites that work!"
+    const factContent = "Your website design is the most important aspect of your marketing campaign. It needs to be engaging, informative, and hold the attention of your visitors. We integrate many elements into your website design with 1,000's of components to choose from. These plugins and widgets can turn turn your website into an advanced lead generation website. All features are designed to be responsive for display on all mobile devices. and desktop computers."
+    const wdFTitle1 = "Jobs Boards"
+    const wdFContent1 = "WordPress sites are great for creating jobs boards for your company to showcase our latest job openings, or for other recruitment agencies within the industry."
+    const wdFTitle2 = "Events Calendar"
+    const wdFContent2 = "An events calendar is used to promote & manage event listings, sell tickets online, send & receive email notifications for customers who registered for their events."
+    const wdFTitle3 = "Customer Reviews"
+    const wdFContent3 = "Customer reviews help your business stand out against your competitors. We design reviews sections that help enhance the credibility of your business, products and/or services."
+    const wdFTitle4 = "Video Content"
+    const wdFContent4 = "Video is an important element on your website design and for your marketing campaign. Having a video of the results of your work can be especially helpful."
+    const wdFTitle5 = "Case Studies"
+    const wdFContent5 = "Case studies are a great way to demonstrate to potential clients your experience by detailing previous projects and how your work has benefitted your clients."
+    const wdFTitle6 = "E-commerce"
+    const wdFContent6 = "The WooCommerce plugin converts WordPress into a sophisticated e-commerce platform to enable visitors to buy directly from your website."
+    const wdFTitle7 = "Industry Blog"
+    const wdFContent7 = "Blog posts relevant to your industry demonstrates your knowledge and provides useful information to your visitors that help to improves your search engine ranking."
+    const wdFTitle8 = "Instant Chat"
+    const wdFContent8 = "Allow website visitors to quickly ask questions via a pop-up chat feature connected to a staff member who can answer your prospective customer enquiries."
     return (
         <div style={{ background: '#f2f2f2'}}>
             <Hero title={title} content={content} HeroImg1={WpDesign1} HeroImg2={WpDesign2} HeroImg3={WpDesign3} HeroImg4={WpDesign4}/>
@@ -80,7 +104,7 @@ const Design = () => {
             <Creating title="We Design WordPress Websites" content={wdContent}/>
             <Experts expertMainTitle={expMainTitle} expertMainContent={expMainContent} expertSubTitle={expSubTitle} expertSubPara1={expSubPara1} expertSubPara2={expSubPara2} expertSubPara3={expSubPara3} expertSubPara4={expSubPara4} expertBtn={expBtn}/>
 
-            <WdFacts />
+            <WdFacts factTitle1={wdFTitle1} factContent1={wdFContent1} factTitle2={wdFTitle2} factContent2={wdFContent2} factTitle3={wdFTitle3} factContent3={wdFContent3} factTitle4={wdFTitle4} factContent4={wdFContent4} factTitle5={wdFTitle5} factContent5={wdFContent5} factTitle6={wdFTitle6} factContent6={wdFContent6} factTitle7={wdFTitle7} factContent7={wdFContent7} factTitle8={wdFTitle8} factContent8={wdFContent8} title={factTitle} content={factContent} factIcon1={AssignmentTurnedInIcon} factIcon2={EventAvailableIcon} factIcon3={CommentIcon} factIcon4={VideoLibraryIcon} factIcon5={LocalLibraryIcon} factIcon6={ShoppingCartIcon} factIcon7={ViewColumnIcon} factIcon8={ChatIcon}/>
 
             <div className={classes.designRes}>
                 <h3 className={classes.designResTitle}>Web Design that Looks Great on Any Screen</h3>
