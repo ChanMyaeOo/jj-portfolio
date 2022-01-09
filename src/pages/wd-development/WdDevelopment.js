@@ -31,6 +31,8 @@ import InsertChartIcon from '@material-ui/icons/InsertChart';
 import MmsIcon from '@material-ui/icons/Mms';
 import WdFacts from '../../components/wd-facts/WdFacts'
 import Creating from '../../components/creating/Creating'
+import Experts from '../../components/experts/Experts'
+import WdDevFaq from './wd-dev-faq/WdDevFaq'
 
 
 
@@ -93,7 +95,14 @@ const WdDevelopment = () => {
     const factContent = "WordPress plugins extend the capabilities of a WordPress website or blog with additional features and functionality. Our WordPress developer will help you choose the right plugins based on your needs and industry."
     const wdCreateTitle = "Developing Websites With WordPress"
     const wdCreateContent = "We create a high-performing and easily-managed WordPress websites with the flexibility of a drag-and-drop Page Builder that is responsive to provide an optimum viewing experience for website visitors on desktop, tablet and mobile devices. "
-
+    const expMainTitle = "More than Just a WordPress Development Agency"
+    const expMainContent = "We really love to code and building WordPress themes and Plugins is what we do best. We have developing WordPress websites sites since 2010 giving us a unique perspective on web development from front to backend"
+    const expSubTitle = "WordPress Development Done Right"
+    const expSubPara1 = "We are a technically and creatively skilled WordPress development agency that specialises in building websites to help you succeed. We design responsive, scalable, SEO-optimised websites that are developed with WordPress."
+    const expSubPara2 = "Our expertise and approach can be applied to the specific demands and nuances in your industry. We’ve worked with many sectors, including professional services, financial services, management and recruitment consultancies, the public sector, the legal sector and healthcare. "
+    const expSubPara3 = "We develop WordPress and WooCommerce websites using Elementor, WP Bakery or Divi page builders along with custom WordPress themes and plugin development."
+    const expSubPara4 = "Please us to discuss your WordPress development project further and provide you with a quotation."
+    const expBtn = "get q quote"
     return (
         <div style={{ background: "#f2f2f2" }}>
             <Hero
@@ -193,7 +202,21 @@ const WdDevelopment = () => {
                 content={wdCreateContent}
             />
             <WdDivider />
+            <Experts
+                expertMainTitle={expMainTitle}
+                expertMainContent={expMainContent}
+                expertSubTitle={expSubTitle}
+                expertSubPara1={expSubPara1}
+                expertSubPara2={expSubPara2}
+                expertSubPara3={expSubPara3}
+                expertSubPara4={expSubPara4}
+                expertBtn={expBtn}
+            />
+            <WdDivider/>
             <WdHosting />
+            <WdDivider/>
+            <WdDevFaq/>
+            <WdDivider/>
         </div>
     );
 };
