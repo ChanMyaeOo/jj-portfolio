@@ -20,6 +20,19 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         marginBottom: '45px'
     },
+    factBtn: {
+        background: '#f64668',
+        color: '#fff',
+        textDecoration: 'none',
+        padding: '10px 18px',
+        textTransform: 'uppercase',
+        fontSize: '15px',
+        fontWeight: 'bold',
+        borderRadius: '20px',
+        display: 'block',
+        width: 'fit-content',
+        margin: '30px auto'
+    },  
 
     // Responsive Design
     [theme.breakpoints.down('md')]: {

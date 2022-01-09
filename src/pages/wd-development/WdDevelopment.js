@@ -21,6 +21,17 @@ import Stage2Img from '../../images/wd-dev2.png'
 import Stage3Img from '../../images/wd-dev3.png'
 import Stage4Img from '../../images/wd-dev4.png'
 import WdDivider from '../../components/wd-divider/WdDivider'
+import AutorenewIcon from '@material-ui/icons/Autorenew';
+import EditLocationIcon from '@material-ui/icons/EditLocation';
+import YoutubeSearchedForIcon from '@material-ui/icons/YoutubeSearchedFor';
+import RateReviewIcon from '@material-ui/icons/RateReview';
+import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import InsertChartIcon from '@material-ui/icons/InsertChart';
+import MmsIcon from '@material-ui/icons/Mms';
+import WdFacts from '../../components/wd-facts/WdFacts'
+
+
 
 const WdDevelopment = () => {
     const classes = useStyles();
@@ -61,6 +72,24 @@ const WdDevelopment = () => {
     const stage4Para1 = "Our Quality Assurance Testing is the final protocol we follow to ensure the best results with your website before launch."
     const stage4Para2 = "Usability Testing:  We know how important it is to have a great user experience which is why we choose to run a visual check for any design errors, missing content, correct colours and fonts used, images and icons sized correctly and cross browser tests to ensure the WordPress website displays correctly on all devices."
     const stage4Para3 = "Performance Testing:  We run a set of performance tests on all new WordPress websites to ensure they run at optimal speed. We employ a number of best practices throughout the planning and development stages which dramatically improve performance across multiple devices, browser types, and connection speeds."
+    const wdFTitle1 = "Image Compression"
+    const wdFContent1 = "Image size is usually the main reason for a slow website. We configure lossless image compression plugins as part of our website speed optimisation."
+    const wdFTitle2 = "Map Plugins"
+    const wdFContent2 = "Store locations, directions to your office or hiking routes can be added to a map and used as an interactive tool for your website visitors increasing user engagement."
+    const wdFTitle3 = "SEO Plugins"
+    const wdFContent3 = "Optimising your website for search engines is essential to effectively market your website so we configure SEO plugins to maximise your search rankings."
+    const wdFTitle4 = "Review Plugins"
+    const wdFContent4 = "Reviews of your products or services taken from Google or similar trusted websites can be displayed in a carousel with integrated microdata for SEO."
+    const wdFTitle5 = "E-commerce"
+    const wdFContent5 = "The WooCommerce plugin converts your website into a sophisticated e-commerce platform to enable visitors to buy directly from your website."
+    const wdFTitle6 = "Hero Slider"
+    const wdFContent6 = "Sliders are used to introduce a page with one of several images sliding across to show your visitors the range of services, features and benefits your company can provide."
+    const wdFTitle7 = "Pricing Table"
+    const wdFContent7 = "Allow your website visitors to see the packages you offer with your services, the price and value you offer along with a call to action button."
+    const wdFTitle8 = "Contact Forms"
+    const wdFContent8 = "Contact forms with set field are essential to gain sales leads from your website by giving visitors the opportunity to easily contact you with relevant details."
+    const factTitle= "We Enhance WordPress with Plugins"
+    const factContent = "WordPress plugins extend the capabilities of a WordPress website or blog with additional features and functionality. Our WordPress developer will help you choose the right plugins based on your needs and industry."
 
     return (
         <div style={{ background: "#f2f2f2" }}>
@@ -122,6 +151,35 @@ const WdDevelopment = () => {
             <WdDivider />
             <Stage stage="Stage 4" title="Quality Assurance Testing" paraCount={3} para1={stage4Para1} para2={stage4Para2} para3={stage4Para3} stageBtn="learn more about our wordpress audits" stageImgUrl={Stage4Img}/>
             <WdDivider />
+            <WdFacts
+                showBtn={true}
+                factTitle1={wdFTitle1}
+                factContent1={wdFContent1}
+                factTitle2={wdFTitle2}
+                factContent2={wdFContent2}
+                factTitle3={wdFTitle3}
+                factContent3={wdFContent3}
+                factTitle4={wdFTitle4}
+                factContent4={wdFContent4}
+                factTitle5={wdFTitle5}
+                factContent5={wdFContent5}
+                factTitle6={wdFTitle6}
+                factContent6={wdFContent6}
+                factTitle7={wdFTitle7}
+                factContent7={wdFContent7}
+                factTitle8={wdFTitle8}
+                factContent8={wdFContent8}
+                title={factTitle}
+                content={factContent}
+                factIcon1={AutorenewIcon}
+                factIcon2={EditLocationIcon}
+                factIcon3={YoutubeSearchedForIcon}
+                factIcon4={RateReviewIcon}
+                factIcon5={LocalGroceryStoreIcon}
+                factIcon6={PhotoLibraryIcon}
+                factIcon7={InsertChartIcon}
+                factIcon8={MmsIcon}
+            />
             <ApiIntegration />
 
             <WpMultilingual />

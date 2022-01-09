@@ -4,7 +4,7 @@ import useStyles from './styles'
 import WdFact from './wd-fact/WdFact'
 
 
-const WdFacts = ({ factTitle1, factContent1, factTitle2, factContent2, factTitle3, factContent3, factTitle4, factContent4, factTitle5, factContent5, factTitle6, factContent6, factTitle7, factContent7, factTitle8, factContent8, title, content, factIcon1, factIcon2, factIcon3, factIcon4, factIcon5, factIcon6, factIcon7, factIcon8}) => {
+const WdFacts = ({ showBtn, factTitle1, factContent1, factTitle2, factContent2, factTitle3, factContent3, factTitle4, factContent4, factTitle5, factContent5, factTitle6, factContent6, factTitle7, factContent7, factTitle8, factContent8, title, content, factIcon1, factIcon2, factIcon3, factIcon4, factIcon5, factIcon6, factIcon7, factIcon8}) => {
     const classes = useStyles()
     return (
         <div className={classes.wdFactsWrap}>
@@ -21,6 +21,13 @@ const WdFacts = ({ factTitle1, factContent1, factTitle2, factContent2, factTitle
                 <WdFact FactIcon={factIcon7} factTitle={factTitle7} factContent={factContent7}/>
                 <WdFact FactIcon={factIcon8} factTitle={factTitle8} factContent={factContent8}/>
             </Grid>
+
+            {
+                showBtn && (
+                    <a className={classes.factBtn} href="https://codecanyon.net/category/wordpress" target="_blank">discover premium wordpress plugin</a>
+                )
+            }
+            
         </div>
     )
 }
