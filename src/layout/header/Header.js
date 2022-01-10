@@ -152,7 +152,7 @@ const Header = () => {
                             <ul className={classes.resSubNav}>
                                 <li><HashLink smooth to='/wordpress-development#api-integrations'>WordPress API Integrations</HashLink></li>
                                 <li><HashLink smooth to='/wordpress-development#wd-multilingual'>WordPress Multilingual</HashLink></li>
-                                <li><Link to="/">WP Jobs Manager Development</Link></li>
+                                <li><Link to="/job-manager-development">WP Jobs Manager Development</Link></li>
                                 <li><Link to="/">WordPress Booking Plugins</Link></li>
                                 <li><Link to="/">Gravity Forms Development</Link></li>
                             </ul>
@@ -181,7 +181,7 @@ const Header = () => {
                         <ul className={classes.subNavList}>
                             <li><HashLink smooth to='/wordpress-development#wd-hosting'>WordPress Hosting</HashLink></li>
                             <li><HashLink smooth to='/wordpress-development#plugins'>WordPress Plugins</HashLink></li>
-                            <li>WordPress Audits</li>
+                            <li><Link to='/wd-audits'>WordPress Audits</Link></li>
                         </ul>
                     </li>
                     <li className={classes.wordPressNav}>
@@ -191,7 +191,7 @@ const Header = () => {
                         <ul className={classes.subNavList}>
                             <li><HashLink smooth to='/wordpress-development#api-integrations'>WordPress API Integrations</HashLink></li>
                             <li><HashLink smooth to='/wordpress-development#wd-multilingual'>WordPress Multilingual</HashLink></li>
-                            <li>WP Jobs Manager Development</li>
+                            <li><Link to="/job-manager-development">WP Jobs Manager Development</Link></li>
                             <li>WordPress Booking Plugins</li>
                             <li>Gravity Forms Development</li>
                         </ul>
@@ -214,6 +214,7 @@ const Header = () => {
                 />
             </Link>
 
+            {/* for mobile view */}
             <ul className={classes.mobileNavList} id="mobile-nav">
                 <li style={{ paddingTop: "3px", marginTop: "15px" }}>
                     <Link to="/">Home</Link>
@@ -244,7 +245,7 @@ const Header = () => {
                     <ul className={classes.mobileSubNavList}>
                         <li><HashLink to="/wordpress-development#api-integrations">WordPress API Integrations</HashLink></li>
                         <li><HashLink to="/wordpress-development#wd-multilingual">WordPress Multilingual</HashLink></li>
-                        <li><Link to="/">WP Jobs Manager Development</Link></li>
+                        <li><Link to="/job-manager-development">WP Jobs Manager Development</Link></li>
                         <li><Link to="/">WordPress Booking Plugins</Link></li>
                         <li style={{ paddingBottom: "10px" }}>
                             <Link to="/">Gravity Forms Development</Link>

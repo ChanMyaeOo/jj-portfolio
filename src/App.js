@@ -14,6 +14,7 @@ import WdDevelopment from './pages/wd-development/WdDevelopment'
 import Contact from './pages/contact/Contact'
 import Seo from './pages/seo/Seo'
 import WdAudits from './pages/wd-audits/WdAudits'
+import JobManager from './pages/job-manager/JobManager'
 import './style.css'
 
 const App = () => {
@@ -22,6 +23,11 @@ const App = () => {
             <Router>
                 <ScrollToTop />
                 <Switch>
+                     <Route path="/job-manager-development">
+                        <Layout>
+                            <JobManager />
+                        </Layout>
+                    </Route>
                     <Route path="/wd-audits">
                         <Layout>
                             <WdAudits />
