@@ -26,7 +26,8 @@ const WdAgency = ({
     agFactContent5,
     agFactTitle6,
     agFactContent6,
-    
+    btnLink,
+    showAnchor
 }) => {
     const classes = useStyles();
     return (
@@ -34,9 +35,23 @@ const WdAgency = ({
             <h3 className={classes.wdTitle}>{title}</h3>
             <p className={classes.wdContent}>{content}</p>
 
-            <Link to='/' className={classes.wdBtn}>
-                {btn}
-            </Link>
+            {showAnchor && (
+                <a
+                    href={`${btnLink}`}
+                    target="_blank"
+                    className={classes.wdBtn}
+                >
+                    {btn}
+                </a>
+            )}
+
+            {
+                !showAnchor && (
+                    <Link to="/contact" className={classes.wdBtn}>
+                        Discuss your project with our developers.
+                    </Link>
+                )
+            }
 
             <div className={classes.wdAgWrap}>
                 {count === 6 && (

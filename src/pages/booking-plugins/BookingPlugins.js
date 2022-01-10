@@ -13,6 +13,7 @@ const BookingPlugins = () => {
     const wdAgTitle = "Online Scheduling Plugin for WordPress"
     const wdAgContent = "Online Scheduling plugins for WordPress make online booking, customer management and check-in simple for businesses of all sizes. WordPress booking plugins are are perfect for small businesses and service companies looking to start taking appointments online."
     const wdAgBtn = "VIEW THE START BOOKING PLUGIN"
+    const btnLink = "https://www.startbooking.com/features"
     return (
         <div>
             <PageTitle title="WordPress Booking Plugins"/>
@@ -27,6 +28,8 @@ const BookingPlugins = () => {
                 content={wdAgContent}
                 btn={wdAgBtn}
                 count={3}
+                btnLink={btnLink}
+                showAnchor={true}
             />
             <WdDivider />
         </div>

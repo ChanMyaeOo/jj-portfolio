@@ -25,6 +25,7 @@ const GravityForms = () => {
     const wdAgTitle = "The Most Powerful Form Plugin for WordPress"
     const wdAgContent = "Gravity Forms is a WordPress plugin that allows us to build beautiful, professional, responsive Web forms that collect valuable contact information from your site visitors. Gravity Forms has full suite of add ons that we can customise and develop to your specific needs."
     const wdAgBtn = "VIEW MORE GRAVITY FORM ADD-ONS"
+    const btnLink = "https://www.gravityforms.com/add-ons/"
     return (
         <div>
             <PageTitle title="Gravity Forms Development"/>
@@ -51,6 +52,8 @@ const GravityForms = () => {
                 content={wdAgContent}
                 btn={wdAgBtn}
                 count={6}
+                btnLink={btnLink}
+                showAnchor={true}
             />
             <WdDivider />
         </div>
