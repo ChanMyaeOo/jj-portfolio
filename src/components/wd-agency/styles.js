@@ -2,7 +2,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
     wdAgContainer: {
-        padding: '60px 0'
+        padding: '60px 0',
+        background: '#f2f2f2',
+        marginTop: '20px'
     },
     wdAgWrap: {
        display: 'flex',

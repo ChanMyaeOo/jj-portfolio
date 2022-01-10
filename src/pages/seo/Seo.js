@@ -27,7 +27,7 @@ const Seo = () => {
     const wdCreateTitle = "Getting Results for Small Businesses"
     const wdCreateContent = "Using Search Engine Optimisation (SEO) to Increase Your Business's Visibility on the Web is Key to Driving your Digital Marketing Campaigns. Take a look at some of our clients we have helped to grow."
     return (
-        <div>
+        <div style={{backgroundColor: '#f2f2f2'}}>
             <Hero 
                 title={title}
                 content={content}

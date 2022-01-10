@@ -13,6 +13,7 @@ import Design from './pages/design/Design'
 import WdDevelopment from './pages/wd-development/WdDevelopment'
 import Contact from './pages/contact/Contact'
 import Seo from './pages/seo/Seo'
+import WdAudits from './pages/wd-audits/WdAudits'
 import './style.css'
 
 const App = () => {
@@ -21,6 +22,11 @@ const App = () => {
             <Router>
                 <ScrollToTop />
                 <Switch>
+                    <Route path="/wd-audits">
+                        <Layout>
+                            <WdAudits />
+                        </Layout>
+                    </Route>
                     <Route path="/digital-marketing">
                         <Layout>
                             <Seo />
