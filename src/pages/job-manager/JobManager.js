@@ -27,6 +27,7 @@ const JobManager = () => {
     const wdAgTitle = "Powerful Job Board Plugin for WordPress"
     const wdAgContent = "WP Job Manager is a lightweight plugin for adding job-board functionality to your WordPress site. It includes all the functionality you need to set up a job board including job listings, a hiring manager dashboard, and more."
     const wdAgBtn = "VIEW MORE WP JOBS MANAGER ADD-ONS"
+    
     return (
         <div>
             <PageTitle title="WP Jobs Manager Development"/>
@@ -53,6 +54,7 @@ const JobManager = () => {
                 content={wdAgContent}
                 btn={wdAgBtn}
                 count={6}
+                
             />
             <WdDivider />
         </div>

@@ -26,6 +26,7 @@ const WdAgency = ({
     agFactContent5,
     agFactTitle6,
     agFactContent6,
+    
 }) => {
     const classes = useStyles();
     return (
@@ -33,7 +34,7 @@ const WdAgency = ({
             <h3 className={classes.wdTitle}>{title}</h3>
             <p className={classes.wdContent}>{content}</p>
 
-            <Link to="/" className={classes.wdBtn}>
+            <Link to='/' className={classes.wdBtn}>
                 {btn}
             </Link>
 

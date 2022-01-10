@@ -15,6 +15,8 @@ import Contact from './pages/contact/Contact'
 import Seo from './pages/seo/Seo'
 import WdAudits from './pages/wd-audits/WdAudits'
 import JobManager from './pages/job-manager/JobManager'
+import BookingPlugins from './pages/booking-plugins/BookingPlugins'
+import GravityForms from './pages/gravity-forms/GravityForms'
 import './style.css'
 
 const App = () => {
@@ -23,6 +25,16 @@ const App = () => {
             <Router>
                 <ScrollToTop />
                 <Switch>
+                    <Route path="/gravity-forms">
+                        <Layout>
+                            <GravityForms />
+                        </Layout>
+                    </Route>
+                    <Route path="/booking-plugins">
+                        <Layout>
+                            <BookingPlugins />
+                        </Layout>
+                    </Route>
                      <Route path="/job-manager-development">
                         <Layout>
                             <JobManager />

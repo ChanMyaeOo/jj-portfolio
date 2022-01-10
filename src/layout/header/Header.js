@@ -153,8 +153,8 @@ const Header = () => {
                                 <li><HashLink smooth to='/wordpress-development#api-integrations'>WordPress API Integrations</HashLink></li>
                                 <li><HashLink smooth to='/wordpress-development#wd-multilingual'>WordPress Multilingual</HashLink></li>
                                 <li><Link to="/job-manager-development">WP Jobs Manager Development</Link></li>
-                                <li><Link to="/">WordPress Booking Plugins</Link></li>
-                                <li><Link to="/">Gravity Forms Development</Link></li>
+                                <li><Link to="/booking-plugins">WordPress Booking Plugins</Link></li>
+                                <li><Link to="/gravity-forms">Gravity Forms Development</Link></li>
                             </ul>
                         </li>
                         <li style={{ paddingBottom: "15px" }}>
@@ -192,8 +192,8 @@ const Header = () => {
                             <li><HashLink smooth to='/wordpress-development#api-integrations'>WordPress API Integrations</HashLink></li>
                             <li><HashLink smooth to='/wordpress-development#wd-multilingual'>WordPress Multilingual</HashLink></li>
                             <li><Link to="/job-manager-development">WP Jobs Manager Development</Link></li>
-                            <li>WordPress Booking Plugins</li>
-                            <li>Gravity Forms Development</li>
+                            <li><Link to="/booking-plugins">WordPress Booking Plugins</Link></li>
+                            <li><Link to='/gravity-forms'>Gravity Forms Development</Link></li>
                         </ul>
                     </li>
                     <li>
@@ -246,9 +246,9 @@ const Header = () => {
                         <li><HashLink to="/wordpress-development#api-integrations">WordPress API Integrations</HashLink></li>
                         <li><HashLink to="/wordpress-development#wd-multilingual">WordPress Multilingual</HashLink></li>
                         <li><Link to="/job-manager-development">WP Jobs Manager Development</Link></li>
-                        <li><Link to="/">WordPress Booking Plugins</Link></li>
+                        <li><Link to="/booking-plugins">WordPress Booking Plugins</Link></li>
                         <li style={{ paddingBottom: "10px" }}>
-                            <Link to="/">Gravity Forms Development</Link>
+                            <Link to="/gravity-forms">Gravity Forms Development</Link>
                         </li>
                     </ul>
                 </li>
