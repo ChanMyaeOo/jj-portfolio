@@ -43,7 +43,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         width: 'fit-content',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        textDecoration: 'none'
     },
     heroBtn2: {
         padding: '10px 16px',
@@ -58,7 +59,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         width: 'fit-content',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        textDecoration: 'none'
     },
     heroImgWrap: {
         width: '100%',

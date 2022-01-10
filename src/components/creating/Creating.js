@@ -14,7 +14,7 @@ const Creating = ({ title, content}) => {
                {content}
             </p>
             <Works />
-            <Link to='/' className={classes.workBtn}>view our work</Link>
+            <Link to='/portfolio' className={classes.workBtn}>view our work</Link>
         </div>
     );
 };

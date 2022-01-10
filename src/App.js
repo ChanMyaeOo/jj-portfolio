@@ -11,6 +11,7 @@ import About from './pages/about/About'
 import Portfolio from './pages/portfolio/Portfolio'
 import Design from './pages/design/Design'
 import WdDevelopment from './pages/wd-development/WdDevelopment'
+import Contact from './pages/contact/Contact'
 import './style.css'
 
 const App = () => {
@@ -19,6 +20,11 @@ const App = () => {
             <Router>
                 <ScrollToTop />
                 <Switch>
+                    <Route path="/contact">
+                        <Layout>
+                            <Contact />
+                        </Layout>
+                    </Route>
                     <Route path="/wordpress-development">
                         <Layout>
                             <WdDevelopment />

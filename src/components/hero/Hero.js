@@ -1,5 +1,6 @@
 import React from "react";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import { Link } from 'react-router-dom'
 import useStyles from "./styles";
 import { ReactComponent as Vendor1 } from '../../images/wordpress.svg'
 import { ReactComponent as Vendor2 } from '../../images/gravity.svg'
@@ -19,8 +20,8 @@ const Hero = ({ title, content, HeroImg1, HeroImg2, HeroImg3 ,HeroImg4 }) => {
                     {content}
                 </p>
                 <div className={classes.heroBtnWrap}>
-                    <button className={classes.heroBtn1}>view our work <ArrowForwardIosIcon className={classes.arrowIcon}/></button>
-                    <button className={classes.heroBtn2}>get a quote <ArrowForwardIosIcon className={classes.arrowIcon} /></button>
+                    <Link to='/portfolio' className={classes.heroBtn1}>view our work <ArrowForwardIosIcon className={classes.arrowIcon}/></Link>
+                    <Link to='/contact' className={classes.heroBtn2}>get a quote <ArrowForwardIosIcon className={classes.arrowIcon} /></Link>
                 </div>
 
                 <div className={classes.heroImgWrap}>

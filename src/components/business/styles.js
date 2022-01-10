@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-around'
     },
     icon: {
-        fontSize: '80px',
+        fontSize: '95px',
         color: '#f64668',
         padding: '20px'
     },
@@ -69,12 +69,15 @@ const useStyles = makeStyles((theme) => ({
             margin: '15px auto'
         },
         icon: {
-            fontSize: '65px'
+            fontSize: '95px'
         }
     },
     [theme.breakpoints.down('sm')]: {
         content: {
             width: '90%'
+        },
+        icon: {
+            fontSize: '85'
         }
     },
     [theme.breakpoints.down('xs')]: {
@@ -83,6 +86,9 @@ const useStyles = makeStyles((theme) => ({
        },
        content: {
            fontSize: '18px'
+       },
+       icon: {
+           fontSize: '80px'
        }
     },
 }));

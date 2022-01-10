@@ -22,8 +22,8 @@ const About = () => {
                 <br/>
                 <p>Please contact us using my email or contact form to discuss your WordPress theme and plugin development project further and provide you with a quotation.</p>
                 <div className={classes.btnWrap}>
-                    <Link to="/" className={classes.aboutWork}>view our work</Link>
-                    <Link to="/" className={classes.aboutQuote}>get a quote</Link>
+                    <Link to="/portfolio" className={classes.aboutWork}>view our work</Link>
+                    <Link to="/contact" className={classes.aboutQuote}>get a quote</Link>
                 </div>
            </div>
         </div>

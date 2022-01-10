@@ -14,7 +14,7 @@ const Experts = ({ expertMainTitle, expertMainContent, expertSubTitle, expertSub
                 <p>{expertSubPara2}</p>
                 <p>{expertSubPara3}</p>
                 <p>{expertSubPara4}</p>
-                <Link to="/" className={classes.quote}>{expertBtn}</Link>
+                <Link to="/contact" className={classes.quote}>{expertBtn}</Link>
             </div>
         </div>
     )
