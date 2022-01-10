@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
         "& > h3": {
             color: '#fff',
             fontSize: '52px',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            textAlign: 'center'
         }
     },
 

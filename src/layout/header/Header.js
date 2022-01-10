@@ -179,9 +179,9 @@ const Header = () => {
                             wordpress <AddIcon />
                         </NavLink>
                         <ul className={classes.subNavList}>
-                            <li><HashLink smooth to='/wordpress-development#wd-hosting'>WordPress Hosting</HashLink></li>
-                            <li><HashLink smooth to='/wordpress-development#plugins'>WordPress Plugins</HashLink></li>
-                            <li><Link to='/wd-audits'>WordPress Audits</Link></li>
+                            <HashLink smooth to='/wordpress-development#wd-hosting'><li>WordPress Hosting</li></HashLink>
+                            <HashLink smooth to='/wordpress-development#plugins'><li>WordPress Plugins</li></HashLink>
+                            <Link to='/wd-audits'><li>WordPress Audits</li></Link>
                         </ul>
                     </li>
                     <li className={classes.wordPressNav}>
@@ -189,11 +189,11 @@ const Header = () => {
                             plugins <AddIcon />
                         </NavLink>
                         <ul className={classes.subNavList}>
-                            <li><HashLink smooth to='/wordpress-development#api-integrations'>WordPress API Integrations</HashLink></li>
-                            <li><HashLink smooth to='/wordpress-development#wd-multilingual'>WordPress Multilingual</HashLink></li>
-                            <li><Link to="/job-manager-development">WP Jobs Manager Development</Link></li>
-                            <li><Link to="/booking-plugins">WordPress Booking Plugins</Link></li>
-                            <li><Link to='/gravity-forms'>Gravity Forms Development</Link></li>
+                            <HashLink smooth to='/wordpress-development#api-integrations'><li>WordPress API Integrations</li></HashLink>
+                            <HashLink smooth to='/wordpress-development#wd-multilingual'><li>WordPress Multilingual</li></HashLink>
+                            <Link to="/job-manager-development"><li>WP Jobs Manager Development</li></Link>
+                            <Link to="/booking-plugins"><li>WordPress Booking Plugins</li></Link>
+                            <Link to='/gravity-forms'><li>Gravity Forms Development</li></Link>
                         </ul>
                     </li>
                     <li>

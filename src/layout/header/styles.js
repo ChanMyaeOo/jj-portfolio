@@ -82,21 +82,19 @@ const useStyles = makeStyles((theme) => ({
         minWidth: "200px",
         display: "none",
         cursor: "pointer",
-        "& > li": {
-            padding: "12px 20px",
-            textTransform: "none",
-            cursor: "pointer",
+        "& > a": {
+            padding: '15px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textDecoration: 'none',
+            color: '#000',
+            textTransform: 'none',
+            fontWeight: '400',
+            borderBottom: '1px solid #ddd',
             "&:hover": {
-                background: "#f64668",
-                color: "#fff",
-                cursor: "pointer",
-            },
-            "& > a": {
-                textDecoration: 'none',
-                color: '#000',
-                "&:hover": {
-                    color: '#fff'
-                }
+                backgroundColor: '#f64668',
+                color: '#fff'
             }
         },
     },
@@ -253,6 +251,9 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     [theme.breakpoints.down("sm")]: {
+        header: {
+            display: 'none'
+        },
         topLeftHeader: {
             "& > div": {
                 padding: "5px 7px",
@@ -263,6 +264,9 @@ const useStyles = makeStyles((theme) => ({
                 padding: "5px",
             },
         },
+        navButton: {
+            fontSize: '14px'
+        }
     },
     [theme.breakpoints.down("xs")]: {
         header: {
