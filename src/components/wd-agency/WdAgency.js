@@ -72,6 +72,26 @@ const WdAgency = ({
                         />
                     </>
                 )}
+
+                {count === 3 && (
+                    <>
+                        <AgencyFact
+                            AgIcon={AgIcon1}
+                            agFactTitle={agFactTitle1}
+                            agFactContent={agFactContent1}
+                        />
+                        <AgencyFact
+                            AgIcon={AgIcon2}
+                            agFactTitle={agFactTitle2}
+                            agFactContent={agFactContent2}
+                        />
+                        <AgencyFact
+                            AgIcon={AgIcon3}
+                            agFactTitle={agFactTitle3}
+                            agFactContent={agFactContent3}
+                        />
+                    </>
+                )}
             </div>
         </div>
     );
