@@ -31,6 +31,7 @@ const App = () => {
                             <Contact />
                         </Layout>
                     </Route>
+                   
                     <Route path="/wordpress-development">
                         <Layout>
                             <WdDevelopment />

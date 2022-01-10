@@ -49,7 +49,6 @@ const Stage = ({ stage, title, stageImgUrl, stageBtn, paraCount, para1, para2, p
             <Grid item lg={6} md={6} sm={12}>
                 <img src={stageImgUrl} alt="stage preview" className={classes.stageImg}/>
             </Grid>
-
         </Grid>
     )
 }

@@ -1,9 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import useStyles from './styles'
+import React from "react";
+import { Link } from "react-router-dom";
+import useStyles from "./styles";
 
-const Experts = ({ expertMainTitle, expertMainContent, expertSubTitle, expertSubPara1, expertSubPara2, expertSubPara3, expertSubPara4, expertBtn }) => {
-    const classes = useStyles()
+const Experts = ({
+    expertMainTitle,
+    expertMainContent,
+    expertSubTitle,
+    expertSubPara1,
+    expertSubPara2,
+    expertSubPara3,
+    expertSubPara4,
+    expertBtn,
+}) => {
+    const classes = useStyles();
     return (
         <div className={classes.experts}>
             <h1 className={classes.header}>{expertMainTitle}</h1>
@@ -14,10 +23,13 @@ const Experts = ({ expertMainTitle, expertMainContent, expertSubTitle, expertSub
                 <p>{expertSubPara2}</p>
                 <p>{expertSubPara3}</p>
                 <p>{expertSubPara4}</p>
-                <Link to="/contact" className={classes.quote}>{expertBtn}</Link>
+                <Link to="/contact" className={classes.quote}>
+                    {expertBtn}
+                </Link>
             </div>
+            <div id="wd-hosting"></div>
         </div>
-    )
-}
+    );
+};
 
-export default Experts
+export default Experts;

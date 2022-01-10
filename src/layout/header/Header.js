@@ -13,6 +13,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import useStyles from "./styles";
 import HeaderLogo from "../../images/header-logo.jpg";
 import './style.css'
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     const classes = useStyles();
@@ -126,7 +127,7 @@ const Header = () => {
                     {/* for i pad view */}
                     <ul className={classes.headerResMenu} id="res-overlay">
                         <li>
-                            <Link to="/">about</Link>
+                            <Link to="/about">about</Link>
                         </li>
                         <li>
                             <Link to="/portfolio">our work</Link>
@@ -139,26 +140,25 @@ const Header = () => {
                                 wordpress <AddIcon />
                             </Link>
                             <ul className={classes.resSubNav}>
-                                <li>WordPress Development</li>
-                                <li>WordPress Hosting</li>
-                                <li>WordPress Plugins</li>
-                                <li>WordPress Audits</li>
+                                <li><HashLink smooth to="/wordpress-development#wd-hosting">WordPress Hosting</HashLink></li>
+                                <li><HashLink smooth to='/wordpress-development#plugins'>WordPress Plugins</HashLink></li>
+                                <li><Link to='/wd-audits'>WordPress Audits</Link></li>
                             </ul>
                         </li>
                         <li className={classes.resWordPressNav}>
-                            <Link to="/">
+                            <Link to="/plugins">
                                 plugins <AddIcon />
                             </Link>
                             <ul className={classes.resSubNav}>
-                                <li>WordPress API Integrations</li>
-                                <li>WordPress Multilingual</li>
-                                <li>WP Jobs Manager Development</li>
-                                <li>WordPress Booking Plugins</li>
-                                <li>Gravity Forms Development</li>
+                                <li><HashLink smooth to='/wordpress-development#api-integrations'>WordPress API Integrations</HashLink></li>
+                                <li><HashLink smooth to='/wordpress-development#wd-multilingual'>WordPress Multilingual</HashLink></li>
+                                <li><Link to="/">WP Jobs Manager Development</Link></li>
+                                <li><Link to="/">WordPress Booking Plugins</Link></li>
+                                <li><Link to="/">Gravity Forms Development</Link></li>
                             </ul>
                         </li>
                         <li style={{ paddingBottom: "15px" }}>
-                            <Link to="/">seo & ppc</Link>
+                            <Link to="/digital-marketing">seo & ppc</Link>
                         </li>
                     </ul>
                 </div>
@@ -179,9 +179,8 @@ const Header = () => {
                             wordpress <AddIcon />
                         </NavLink>
                         <ul className={classes.subNavList}>
-                            <li>WordPress Development</li>
-                            <li>WordPress Hosting</li>
-                            <li>WordPress Plugins</li>
+                            <li><HashLink smooth to='/wordpress-development#wd-hosting'>WordPress Hosting</HashLink></li>
+                            <li><HashLink smooth to='/wordpress-development#plugins'>WordPress Plugins</HashLink></li>
                             <li>WordPress Audits</li>
                         </ul>
                     </li>
@@ -190,20 +189,20 @@ const Header = () => {
                             plugins <AddIcon />
                         </NavLink>
                         <ul className={classes.subNavList}>
-                            <li>WordPress API Integrations</li>
-                            <li>WordPress Multilingual</li>
+                            <li><HashLink smooth to='/wordpress-development#api-integrations'>WordPress API Integrations</HashLink></li>
+                            <li><HashLink smooth to='/wordpress-development#wd-multilingual'>WordPress Multilingual</HashLink></li>
                             <li>WP Jobs Manager Development</li>
                             <li>WordPress Booking Plugins</li>
                             <li>Gravity Forms Development</li>
                         </ul>
                     </li>
                     <li>
-                        <NavLink to="/seo">seo & ppc</NavLink>
+                        <NavLink to="/digital-marketing">seo & ppc</NavLink>
                     </li>
                 </ul>
 
                 <div className={classes.buttonWrap}>
-                    <button className={classes.navButton}>get a quote</button>
+                    <Link to="/contact" className={classes.navButton}>get a quote</Link>
                 </div>
             </div>
 
@@ -230,36 +229,36 @@ const Header = () => {
                         WordPress <ExpandMoreIcon />
                     </Link>
                     <ul className={classes.mobileSubNavList}>
-                        <li>WordPress Development</li>
-                        <li>WordPress Hosting</li>
-                        <li>WordPress Plugins</li>
+                        
+                        <li><HashLink smooth to="/wordpress-development#wd-hosting">WordPress Hosting</HashLink></li>
+                        <li><HashLink smooth to="/wordpress-development#plugins">WordPress Plugins</HashLink></li>
                         <li style={{ paddingBottom: "10px" }}>
-                            WordPress Audits
+                            <Link to="wd-audits">WordPress Audits</Link>
                         </li>
                     </ul>
                 </li>
                 <li className={classes.mobileWordpress}>
-                    <Link to="/">
+                    <Link to="/plugins">
                         Plugins <ExpandMoreIcon />
                     </Link>
                     <ul className={classes.mobileSubNavList}>
-                        <li>WordPress API Integrations</li>
-                        <li>WordPress Multilingual</li>
-                        <li>WP Jobs Manager Development</li>
-                        <li>WordPress Booking Plugins</li>
+                        <li><HashLink to="/wordpress-development#api-integrations">WordPress API Integrations</HashLink></li>
+                        <li><HashLink to="/wordpress-development#wd-multilingual">WordPress Multilingual</HashLink></li>
+                        <li><Link to="/">WP Jobs Manager Development</Link></li>
+                        <li><Link to="/">WordPress Booking Plugins</Link></li>
                         <li style={{ paddingBottom: "10px" }}>
-                            Gravity Forms Development
+                            <Link to="/">Gravity Forms Development</Link>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link to="/">SEO & PPC</Link>
+                    <Link to="digital-marketing/">SEO & PPC</Link>
                 </li>
                 <li>
-                    <Link to="/">About</Link>
+                    <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <Link to="/">Get a Quote</Link>
+                    <Link to="/contact">Get a Quote</Link>
                 </li>
             </ul>
             <div className={classes.mobileMenu}>

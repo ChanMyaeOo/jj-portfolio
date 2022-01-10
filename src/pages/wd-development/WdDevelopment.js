@@ -162,6 +162,7 @@ const WdDevelopment = () => {
             <Stage stage="Stage 3" title="WordPress Content Population" paraCount={3} para1={stage3Para1} para2={stage3Para2} para3={stage3Para3} stageBtn="get a wordpress development quote" stageImgUrl={Stage3Img}/>
             <WdDivider />
             <Stage stage="Stage 4" title="Quality Assurance Testing" paraCount={3} para1={stage4Para1} para2={stage4Para2} para3={stage4Para3} stageBtn="learn more about our wordpress audits" stageImgUrl={Stage4Img}/>
+            <div id="plugins" style={{ width: '100%', height: '2px', marginBottom: '40px'}}></div>
             <WdDivider />
             <WdFacts
                 showBtn={true}
@@ -193,8 +194,10 @@ const WdDevelopment = () => {
                 factIcon8={MmsIcon}
             />
             <WdDivider />
+            <div id="api-integrations" style={{ width: '100%', height: '2px', marginBottom: '40px'}}></div>
             <ApiIntegration />
             <WdDivider />
+            <div id="wd-multilingual" style={{ width: '100%', height: '2px', marginBottom: '40px'}}></div>
             <WpMultilingual />
             <WdDivider />
             <Creating 
@@ -213,7 +216,7 @@ const WdDevelopment = () => {
                 expertBtn={expBtn}
             />
             <WdDivider/>
-            <WdHosting />
+            <WdHosting/>
             <WdDivider/>
             <WdDevFaq/>
             <WdDivider/>

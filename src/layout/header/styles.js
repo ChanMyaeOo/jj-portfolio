@@ -91,6 +91,13 @@ const useStyles = makeStyles((theme) => ({
                 color: "#fff",
                 cursor: "pointer",
             },
+            "& > a": {
+                textDecoration: 'none',
+                color: '#000',
+                "&:hover": {
+                    color: '#fff'
+                }
+            }
         },
     },
 
@@ -110,6 +117,8 @@ const useStyles = makeStyles((theme) => ({
         height: "fit-content",
         cursor: "pointer",
         textTransform: "uppercase",
+        textDecoration: 'none',
+        fontSize: '15px'
     },
 
     headerMenuIconWrap: {
@@ -151,6 +160,10 @@ const useStyles = makeStyles((theme) => ({
         display: "none",
         "& > li": {
             padding: "5px 5px 5px 0",
+            "& > a": {
+                textDecoration: 'none',
+                color: '#000'
+            }
         },
     },
 
@@ -181,6 +194,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     mobileNavList: {
+        boxShadow: '0px 0px 4px 0px rgb(0 0 0 / 30%) inset',
         position: 'fixed',
         bottom: 0,
         right: 0,
@@ -217,7 +231,11 @@ const useStyles = makeStyles((theme) => ({
         "& > li": {
             listStyle: 'none',
             // padding: '4px 0',
-            lineHeight: '1.9rem'
+            lineHeight: '1.9rem',
+            "& > a": {
+                textDecoration: 'none',
+                color: '#000'
+            }
         }
     },
 

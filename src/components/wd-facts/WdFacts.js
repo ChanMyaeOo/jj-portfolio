@@ -7,7 +7,7 @@ import WdFact from './wd-fact/WdFact'
 const WdFacts = ({ showBtn, factTitle1, factContent1, factTitle2, factContent2, factTitle3, factContent3, factTitle4, factContent4, factTitle5, factContent5, factTitle6, factContent6, factTitle7, factContent7, factTitle8, factContent8, title, content, factIcon1, factIcon2, factIcon3, factIcon4, factIcon5, factIcon6, factIcon7, factIcon8}) => {
     const classes = useStyles()
     return (
-        <div className={classes.wdFactsWrap}>
+        <div className={classes.wdFactsWrap} >
             <h3 className={classes.wpFactsTitle}>{title}</h3>
             <p className={classes.wpFactsContent}>{content}</p>
             
