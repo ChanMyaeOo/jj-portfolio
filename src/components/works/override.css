@@ -3,13 +3,13 @@
 }
 
 .styles_gridItem__nPXhF figcaption {
-    padding: 0;
+    padding: 0 !important;
 }
 
 .styles_gridItem__nPXhF figure > div > img {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .styles_grid__1mw-l {
-    max-width: 100%;
+    max-width: 100% !important;
 }
