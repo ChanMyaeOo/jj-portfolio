@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "space-between",
         padding: "18px 10px",
+        width: '100%'
     },
 
     navList: {
@@ -178,9 +179,9 @@ const useStyles = makeStyles((theme) => ({
         zIndex: "1400",
         position: "fixed",
         top: 0,
-        width: "100%",
         background: "#fff",
         boxShadow: "0px 2px 2px rgba(0,0,0,0.5)",
+        maxWidth: '1280px'
     },
 
     mobileMenu: {
