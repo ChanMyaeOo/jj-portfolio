@@ -50,7 +50,8 @@ const useStyles = makeStyles((theme) => ({
            fontSize: '32px'
        },
        wpFactsContent: {
-           fontSize: '19px'
+           fontSize: '19px',
+           width: '100%'
        }
     },
 }));

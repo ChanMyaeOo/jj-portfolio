@@ -55,11 +55,11 @@ const useStyles = makeStyles((theme) => ({
             "& > a": {
                 display: "flex",
                 alignItems: "center",
-                textDecoration: 'none',
-                color: '#000',
+                textDecoration: "none",
+                color: "#000",
                 "&:hover": {
-                    color: '#f64668'
-                }
+                    color: "#f64668",
+                },
             },
         },
     },
@@ -83,19 +83,19 @@ const useStyles = makeStyles((theme) => ({
         display: "none",
         cursor: "pointer",
         "& > a": {
-            padding: '15px',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            textDecoration: 'none',
-            color: '#000',
-            textTransform: 'none',
-            fontWeight: '400',
-            borderBottom: '1px solid #ddd',
+            padding: "15px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textDecoration: "none",
+            color: "#000",
+            textTransform: "none",
+            fontWeight: "400",
+            borderBottom: "1px solid #ddd",
             "&:hover": {
-                backgroundColor: '#f64668',
-                color: '#fff'
-            }
+                backgroundColor: "#f64668",
+                color: "#fff",
+            },
         },
     },
 
@@ -115,8 +115,8 @@ const useStyles = makeStyles((theme) => ({
         height: "fit-content",
         cursor: "pointer",
         textTransform: "uppercase",
-        textDecoration: 'none',
-        fontSize: '15px'
+        textDecoration: "none",
+        fontSize: "15px",
     },
 
     headerMenuIconWrap: {
@@ -147,8 +147,8 @@ const useStyles = makeStyles((theme) => ({
         "& > li > a": {
             display: "flex",
             alignItems: "center",
-            textDecoration: 'none',
-            color: '#000'
+            textDecoration: "none",
+            color: "#000",
         },
     },
 
@@ -159,9 +159,9 @@ const useStyles = makeStyles((theme) => ({
         "& > li": {
             padding: "5px 5px 5px 0",
             "& > a": {
-                textDecoration: 'none',
-                color: '#000'
-            }
+                textDecoration: "none",
+                color: "#000",
+            },
         },
     },
 
@@ -174,17 +174,17 @@ const useStyles = makeStyles((theme) => ({
     },
 
     fixedHeader: {
-        zIndex: '1400',
-        position: 'fixed',
+        zIndex: "1400",
+        position: "fixed",
         top: 0,
-        width: '100%',
+        width: "100%",
         background: "#fff",
-        boxShadow: '0px 2px 2px rgba(0,0,0,0.5)'
+        boxShadow: "0px 2px 2px rgba(0,0,0,0.5)",
     },
 
     mobileMenu: {
         display: "none",
-        zIndex: '1000'
+        zIndex: "1000",
     },
 
     mobileHeaderLogo: {
@@ -192,53 +192,69 @@ const useStyles = makeStyles((theme) => ({
     },
 
     mobileNavList: {
-        boxShadow: '0px 0px 4px 0px rgb(0 0 0 / 30%) inset',
-        position: 'fixed',
+        boxShadow: "0px 0px 4px 0px rgb(0 0 0 / 30%) inset",
+        position: "fixed",
         bottom: 0,
         right: 0,
-        marginBottom: '80px',
-        marginRight: '20px',
-        background: '#f2f2f2',
-        minWidth: '200px',
-        listStyle: 'none',
-        paddingLeft: '15px',
-        paddingRight: '15px',
-        display: 'none',
-        zIndex: '1000',
+        marginBottom: "80px",
+        marginRight: "20px",
+        background: "#f2f2f2",
+        minWidth: "200px",
+        listStyle: "none",
+        paddingLeft: "15px",
+        paddingRight: "15px",
+        display: "none",
+        zIndex: "1000",
         "& > li": {
-            minHeight: '40px',
+            minHeight: "40px",
             "& > a": {
-                display: 'flex',
-                alignItems: 'center',
-                textDecoration: 'none',
-                color: '#000'
-            }
-        }
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
+                color: "#000",
+            },
+        },
     },
 
     mobileWordpress: {
         "&:hover": {
             "& $mobileSubNavList": {
-                display: 'block'
-            }
-        }
+                display: "block",
+            },
+        },
     },
 
     mobileSubNavList: {
-        display: 'none',
+        display: "none",
         "& > li": {
-            listStyle: 'none',
+            listStyle: "none",
             // padding: '4px 0',
-            lineHeight: '1.9rem',
+            lineHeight: "1.9rem",
             "& > a": {
-                textDecoration: 'none',
-                color: '#000'
-            }
-        }
+                textDecoration: "none",
+                color: "#000",
+            },
+        },
     },
 
     mobileCloseIcon: {
-        display: 'none'
+        display: "none",
+    },
+    callBtn: {
+        padding: "5px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        color: "#fff",
+        textDecoration: "none",
+    },
+    emailBtn: {
+        padding: "5px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        color: "#fff",
+        textDecoration: "none",
     },
 
     // Responsive Design
@@ -252,7 +268,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
         header: {
-            display: 'none'
+            display: "none",
         },
         topLeftHeader: {
             "& > div": {
@@ -265,8 +281,8 @@ const useStyles = makeStyles((theme) => ({
             },
         },
         navButton: {
-            fontSize: '14px'
-        }
+            fontSize: "14px",
+        },
     },
     [theme.breakpoints.down("xs")]: {
         header: {

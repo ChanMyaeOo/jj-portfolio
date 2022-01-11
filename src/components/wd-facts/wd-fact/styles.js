@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
        wdFactIcon: {
            fontSize: '45px'
+       },
+       wdWrap: {
+           padding: '10px'
        }
     },
 }));

@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     }, 
     quoteWrap: {
         backgroundColor: '#fff',
-        boxShadoe: '10px 20px 30px 1px rgb(0 0 0 / 10%)',
+        boxShadow: '10px 20px 30px 1px rgb(0 0 0 / 10%)',
         padding: '40px',
         borderRadius: '15px',
     },
@@ -52,7 +52,9 @@ const useStyles = makeStyles((theme) => ({
         // do something
     },
     [theme.breakpoints.down('xs')]: {
-       // do something
+       quoteWrap: {
+           padding: '20px'
+       }
     },
 }));
 

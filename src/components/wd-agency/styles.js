@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         margin: '0 auto',
         textDecoration: 'none',
+        textAlign: 'center',
         fontSize: '21px',
         fontWeight: 'bold',
         color: '#f64668',

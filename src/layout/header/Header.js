@@ -263,15 +263,15 @@ const Header = () => {
                 </li>
             </ul>
             <div className={classes.mobileMenu}>
-                <div>
+                <a href="tel:09976742687" className={classes.callBtn}>
                     <PhoneIcon />
                     Call
-                </div>
+                </a>
 
-                <div>
+                <a href="mailto:jjportfolio1111@gmail.com" className={classes.emailBtn}>
                     <EmailIcon />
                     Email
-                </div>
+                </a>
 
                 <div>
                     <MenuIcon
