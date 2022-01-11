@@ -4,6 +4,8 @@ import { Grid } from "@material-ui/core";
 import EmailIcon from "@material-ui/icons/Email";
 import LeafLetMap from "../../components/leaflet-map/LeafLetMap";
 import useStyles from "./styles";
+import RequestForm from './request-form/RequestForm'
+import Newsletter from './newsletter-form/Newsletter'
 
 const Footer = () => {
     const classes = useStyles();
@@ -37,27 +39,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className={classes.quoteWrap}>
-                    <h3 className={classes.quote}>Request a Quote</h3>
-                    <p className={classes.quoteContact}>
-                        Please leave details about your WordPress design and
-                        development project and we will contact you shortly.
-                    </p>
-                    <form className={classes.form}>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <input type="text" placeholder="Phone" />
-                        <textarea
-                            placeholder="Message"
-                            className={classes.quoteArea}
-                        ></textarea>
-                        <input
-                            type="submit"
-                            value="SEND REQUEST"
-                            className={classes.quoteBtn}
-                        />
-                    </form>
-                </div>
+                <RequestForm />
             </div>
 
             <Grid container className={classes.footerBottom}>
@@ -126,25 +108,7 @@ const Footer = () => {
                     <LeafLetMap />
                 </Grid>
 
-                <Grid
-                    item
-                    lg={4}
-                    md={4}
-                    sm={6}
-                    xs={12}
-                    className={classes.gridWrap}
-                >
-                    <h3 className={classes.fNewsTitle}>Newsletter</h3>
-                    <form className={classes.fNewsForm}>
-                        <input type="text" placeholder="Your name" />
-                        <input type="email" placeholder="Your e-mail address" />
-                        <input
-                            type="submit"
-                            value="SIGN UP"
-                            className={classes.fNewsBtn}
-                        />
-                    </form>
-                </Grid>
+                <Newsletter/>
 
                 <Grid
                     item

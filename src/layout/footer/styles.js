@@ -71,49 +71,6 @@ const useStyles = makeStyles((theme) => ({
         color: '#2a3950',
         marginRight: '5px'
     },  
-    quote: {
-        fontSize: '28px',
-        color: '#212236'
-    },
-    quoteContact: {
-        fontSize: '18px',
-        color: '#2a3950',
-        lineHeight: '1.5rem',
-        margin: '20px 0'
-    }, 
-    quoteWrap: {
-        backgroundColor: '#fff',
-        boxShadoe: '10px 20px 30px 1px rgb(0 0 0 / 10%)',
-        padding: '40px',
-        borderRadius: '15px',
-    },
-    form: {
-        display: 'flex',
-        flexDirection: 'column',
-        "& > input": {
-            height: '42px',
-            margin: '7px 0',
-            padding: '5px',
-        }
-    },
-    quoteArea: {
-        margin: '7px 0',
-        minHeight: '70px',
-        minWidth: '100%',
-        maxWidth: '540px',
-        padding: '5px',
-        marginBottom: '20px'
-    },
-
-    quoteBtn: {
-        background: '#f64668',
-        border: 'none',
-        outline: 'none',
-        color: '#fff',
-        fontWeight: 'bold',
-        cursor: 'pointer',
-        fontSize: '15px',
-    },
 
     gridWrap: {
         padding: '20px'
@@ -150,30 +107,9 @@ const useStyles = makeStyles((theme) => ({
         color: '#fff',
         marginBottom: '20px'
     },
-    fNewsTitle: {
-        fontSize: '22px',
-        color: '#fff',
-        fontWeight: 'bold',
-        marginBottom: '20px'
-    },
-    fNewsForm: {
-        display: 'flex',
-        flexDirection: 'column',
-        "& > input": {
-            height: '42px',
-            padding: '5px',
-            marginBottom: '10px'
-        }
-    },
-    fNewsBtn: {
-        background: '#f64668',
-        color: '#fff',
-        fontWeight: 'bold',
-        fontSize: '15px',
-        cursor: 'pointer',
-        border: 'none',
-        outline: 'none'
-    },
+    
+    
+    
     fHr: {
         border: 'none',
         height: '1px',
