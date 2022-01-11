@@ -24,9 +24,10 @@ const useStyles = makeStyles((theme) => ({
     topRightHeader: {
         display: "flex",
         alignItems: "center",
-        "& > div": {
+        "& > a": {
             padding: "10px",
             color: "#f2f2f2",
+            textDecoration: 'none'
         },
     },
     topRightIcons: {
@@ -276,7 +277,7 @@ const useStyles = makeStyles((theme) => ({
             },
         },
         topRightHeader: {
-            "& > div": {
+            "& > a": {
                 padding: "5px",
             },
         },

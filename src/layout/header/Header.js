@@ -89,15 +89,15 @@ const Header = () => {
                 </div>
 
                 <div className={classes.topRightHeader}>
-                    <div>
+                    <a href="#">
                         <FacebookIcon className={classes.topRightIcons} />
-                    </div>
-                    <div>
+                    </a>
+                    <a href="#">
                         <TwitterIcon className={classes.topRightIcons} />
-                    </div>
-                    <div>
+                    </a>
+                    <a href="#">
                         <LinkedInIcon className={classes.topRightIcons} />
-                    </div>
+                    </a>
                 </div>
             </div>
 
